@@ -11,7 +11,8 @@ CTA.TMVA.sub_train.sh
 optimization method (MC or GA)
 (SplitSeed=0)
 
-* MVA_METHOD BDT
+ MVA_METHOD BDT
+* MVA_METHOD BDT NTrees=400:MaxDepth=3
  MVA_METHOD BOXCUTS FitMethod=GA:PopSize=3000
 
 ##############################################
@@ -55,7 +56,7 @@ MINEVENTS <signal events> <background events>
 Selection cut before training
 (similar to TTree::Draw() selection cuts)
 
-* SELECTION_CUTS MSCW>-2.&&MSCW<2.&&MSCL>-2.&&MSCL<5.&&ENERGYCHI2VARIABLE>=0.&&ENERGYVARIABLE>0.&&EmissionHeight>0.&&NImages>=MINIMAGES
+* SELECTION_CUTS MSCW>-2.&&MSCW<2.&&MSCL>-2.&&MSCL<5.&&ENERGYCHI2VARIABLE>=0.&&log10(ENERGYCHI2VARIABLE)<-0.4&&ENERGYVARIABLE>0.&&EmissionHeight>0.&&NImages>=MINIMAGES
 
 ##############################################
 Prepare training options
