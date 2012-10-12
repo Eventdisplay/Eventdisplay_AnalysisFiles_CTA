@@ -18,6 +18,7 @@ successfull core and direction reconstruction (>=0.)
 * arraychi2 0. 1.e99
 distance of core position to telescopes [m]
 * arraycore -1. 1.e99
+(default value is 250)
 * telcoredistance 250.
 size of the camera [deg], all events with direction
 outside that intervall are ignored
@@ -51,6 +52,7 @@ emission height
 
 v)  TMVA cuts
 TMVACUTS <MVA Method> <file index min> <file index max> <weight file (without energy bin index and suffix)>
-* TMVAPARAMETER BDT 0 12  $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
+(DEFAULT 0 12)
+* TMVAPARAMETER BDT 0 12 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
 TMVACUTS <signal efficiency> <probability threshold> <Optimize (for source with this CU strength)> <file with particle numbers before cuts>
 * TMVACUTS 0.4 -99.
