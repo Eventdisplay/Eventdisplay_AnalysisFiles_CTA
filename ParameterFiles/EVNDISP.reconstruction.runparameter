@@ -105,7 +105,7 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 * -1 MINSIZE 0
 
 * -413 MINTUBES 4
-* -413 MAXLOSS 0.2
+* -413 MAXLOSS 0.05
 * -413 MINFUI 0.0
 
 * -100 MINTUBES 4
@@ -129,7 +129,7 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 * -1 MINANGLE 15.
 
 * -413 MINTUBES 4
-* -413 MAXLOSS 0.2
+* -413 MAXLOSS 0.05
 * -413 MINFUI 0.0
 
 * -100 MINTUBES 4
@@ -144,48 +144,50 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 * -73 MAXLOSS 0.2
 * -73 MINFUI 0.0
 
-
 Quality cut set 2:
-looser cuts for good sensitivity, but much worse energy resolution (especially at high energies)
-(same as 0; different loss cut)
+all-purpose cuts for good sensitivity and good angular/energy resolution
+(same as 0; with additional cut on angle between two image axis for two-telescope events)
+
 * -1 RECMETHOD 4
 * -1 MINSIZE 0
+* -1 MINANGLE 20.
 
 * -413 MINTUBES 4
-* -413 MAXLOSS 0.2
+* -413 MAXLOSS 0.05
 * -413 MINFUI 0.0
 
 * -100 MINTUBES 4
-* -100 MAXLOSS 0.5
+* -100 MAXLOSS 0.2
 * -100 MINFUI 0.0
 
 * -37 MINTUBES 3
-* -37 MAXLOSS 0.5
+* -37 MAXLOSS 0.2
 * -37 MINFUI 0.0
 
 * -73 MINTUBES 4
-* -73 MAXLOSS 0.5
+* -73 MAXLOSS 0.2
 * -73 MINFUI 0.0
 
 Quality cut set 3:
-looser cuts for good sensitivity, but much worse energy resolution (especially at high energies)
-(same as 2; with additional cut on angle between two image axis for two-telescope events)
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
 * -1 RECMETHOD 4
-* -1 MINSIZE 0
-* -1 MINANGLE 15.
+* -1 MINSIZE 100.
+* -1 MINANGLE 20.
 
 * -413 MINTUBES 4
-* -413 MAXLOSS 0.2
+* -413 MAXLOSS 0.05
 * -413 MINFUI 0.0
 
 * -100 MINTUBES 4
-* -100 MAXLOSS 0.5
+* -100 MAXLOSS 0.2
 * -100 MINFUI 0.0
 
 * -37 MINTUBES 3
-* -37 MAXLOSS 0.5
+* -37 MAXLOSS 0.2
 * -37 MINFUI 0.0
 
 * -73 MINTUBES 4
-* -73 MAXLOSS 0.5
+* -73 MAXLOSS 0.2
 * -73 MINFUI 0.0
+
