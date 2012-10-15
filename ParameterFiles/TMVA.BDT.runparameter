@@ -23,26 +23,31 @@ VARIABLE <variable name> <type (float=F, integer=I)>  <cut range min> <cut range
 
 cut categories:  NotEnforced, FMax, FMin, FSmart
 
-* VARIABLE F -2.0  1.0 FMin MSCW
-* VARIABLE F -2.0  1.0 FMin MSCL
-* VARIABLE F -1 -1 FMin log10(ENERGYCHI2VARIABLE)
+* VARIABLE F -2.0  1.0 NotEnforced MSCW
+* VARIABLE F -2.0  1.0 NotEnforced MSCL
+* VARIABLE F -1 -1 NotEnforced log10(ENERGYCHI2VARIABLE)
 * VARIABLE F 0.0 100. FMax EmissionHeight
-* VARIABLE F -1 -1 FMin log10(EmissionHeightChi2)
-* VARIABLE F -1 -1 FMin log10(SizeSecondMax)
+* VARIABLE F -1 -1 NotEnforced log10(EmissionHeightChi2)
+* VARIABLE F -1 -1 NotEnforced log10(SizeSecondMax)
+* VARIABLE I 2 -1 NotEnforced NImages_Ttype
 
 ##############################################
 spectator variables
+* SPECTATOR runNumber
+* SPECTATOR eventNumber
+* SPECTATOR MCze
+* SPECTATOR MCaz
+* SPECTATOR MCxoff
+* SPECTATOR MCyoff
+* SPECTATOR MCxcore
+* SPECTATOR MCycore
+* SPECTATOR MCe0
 * SPECTATOR NImages
 * SPECTATOR Xoff
 * SPECTATOR Yoff
 * SPECTATOR Xcore
 * SPECTATOR Ycore
 * SPECTATOR ENERGYVARIABLE
-* SPECTATOR MCxoff
-* SPECTATOR MCyoff
-* SPECTATOR MCxcore
-* SPECTATOR MCycore
-* SPECTATOR MCe0
 
 
 ##############################################
@@ -62,7 +67,8 @@ Selection cut before training
 Prepare training options
 (e.g. number of signal and background events used for training: nTrain_Signal=100:nTrain_Background=100)
 
-* PREPARE_TRAINING_OPTIONS SplitMode=Random:!V
+ PREPARE_TRAINING_OPTIONS SplitMode=Random:!V
+* PREPARE_TRAINING_OPTIONS SplitMode=Block:!V
 
 signal weight 
 * SIGNALWEIGHT 1.
