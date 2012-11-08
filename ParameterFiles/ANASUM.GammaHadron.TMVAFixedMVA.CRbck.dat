@@ -4,9 +4,9 @@
  File to be used with the corresponding scripts in $EVNDISPSYS/scripts/CTA/:
  CTA.EFFAREA.sub_analyse.sh and CTA.EFFAREA.subAllParticle_analyse.sh
 
- Cuts are optimzied for 1% CU and 50 h of observations
+ fixed signal efficiency
 
- To be used for gamma simulations
+ To be used for CR background simulations
 
 ========================================================
 * cutselection 40 DIRECTIONCUT
@@ -18,8 +18,7 @@ successfull core and direction reconstruction (>=0.)
 * arraychi2 0. 1.e99
 distance of core position to telescopes [m]
 * arraycore -1. 1.e99
-(default value is 250)
-* telcoredistance 250
+* telcoredistance 250.
 size of the camera [deg], all events with direction
 outside that intervall are ignored
 * cameraedge -1. 1.e99
@@ -32,7 +31,7 @@ replaced by parent script
 * arrayntel MINIMAGES 10000
 
 ii) direction cut [deg2]
-* angres 80
+* theta2cut THETA2MIN THETA2MAX
 
 iii) gamma hadron cuts:
 b) mean scaled width cut (use cut selector 0 in runlist)
@@ -52,7 +51,6 @@ emission height
 
 v)  TMVA cuts
 TMVACUTS <MVA Method> <file index min> <file index max> <weight file (without energy bin index and suffix)>
-* TMVAPARAMETER BDT 0 7 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
-TMVACUTS <signal efficiency> <probability threshold> <Optimize (for source with this CU strength)> <observation time> <file with particle rates before cuts>
-(note that observation time is irrelevant for  the determination of the optimal cut)
-* TMVACUTS -99. -99. 0.01 50. PARTICLENUMBERFILE
+* TMVAPARAMETER BDT 0 12  $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
+TMVACUTS <signal efficiency> <probability threshold> <Optimize (for source with this CU strength)> <file with particle numbers before cuts>
+* TMVACUTS -99. -1.

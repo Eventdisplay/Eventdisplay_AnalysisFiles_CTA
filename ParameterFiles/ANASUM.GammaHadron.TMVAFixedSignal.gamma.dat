@@ -53,6 +53,6 @@ emission height
 v)  TMVA cuts
 TMVACUTS <MVA Method> <file index min> <file index max> <weight file (without energy bin index and suffix)>
 (DEFAULT 0 12)
-* TMVAPARAMETER BDT 0 12 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
+* TMVAPARAMETER BDT 0 7 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
 TMVACUTS <signal efficiency> <probability threshold> <Optimize (for source with this CU strength)> <file with particle numbers before cuts>
 * TMVACUTS 0.4 -99.
