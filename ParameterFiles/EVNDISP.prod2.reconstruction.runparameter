@@ -106,90 +106,97 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 * -1 RECMETHOD 4
 * -1 MINSIZE 0
 
-* -402 MINTUBES 4
-* -402 MAXLOSS 0.05
-* -402 MINFUI 0.0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MINFUI 0.0
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
 * -104 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
 * -37 MINFUI 0.0
 
-* -73 MINTUBES 4
-* -73 MAXLOSS 0.2
-* -73 MINFUI 0.0
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+* -015 MINFUI 0.0
 
 Quality cut set 1:
 all-purpose cuts for good sensitivity and good angular/energy resolution
 (same as 0; with additional cut on angle between two image axis for two-telescope events)
+L2 trigger type 0
 
 * -1 RECMETHOD 4
 * -1 MINSIZE 0
-* -1 MINANGLE 15.
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 0
 
-* -402 MINTUBES 4
-* -402 MAXLOSS 0.05
-* -402 MINFUI 0.0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MINFUI 0.0
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
 * -104 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
 * -37 MINFUI 0.0
 
-* -73 MINTUBES 4
-* -73 MAXLOSS 0.2
-* -73 MINFUI 0.0
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+* -015 MINFUI 0.0
 
 Quality cut set 2:
 all-purpose cuts for good sensitivity and good angular/energy resolution
 (same as 0; with additional cut on angle between two image axis for two-telescope events)
+L2 trigger type 1
 
 * -1 RECMETHOD 4
 * -1 MINSIZE 0
 * -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 1
 
-* -402 MINTUBES 4
-* -402 MAXLOSS 0.05
-* -402 MINFUI 0.0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MINFUI 0.0
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
 * -104 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
 * -37 MINFUI 0.0
 
-* -73 MINTUBES 4
-* -73 MAXLOSS 0.2
-* -73 MINFUI 0.0
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+* -015 MINFUI 0.0
 
 Quality cut set 3:
 all-purpose cuts for good sensitivity and good angular/energy resolution
+(same as 0; with additional cut on angle between two image axis for two-telescope events)
+L2 trigger type 2
 
 * -1 RECMETHOD 4
-* -1 MINSIZE 100.
+* -1 MINSIZE 0
 * -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 2
 
-* -402 MINTUBES 4
-* -402 MAXLOSS 0.05
-* -402 MINFUI 0.0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MINFUI 0.0
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
 * -104 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
 * -37 MINFUI 0.0
 
-* -73 MINTUBES 4
-* -73 MAXLOSS 0.2
-* -73 MINFUI 0.0
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+* -015 MINFUI 0.0
 
