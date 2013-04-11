@@ -68,7 +68,7 @@ Prepare training options
 (e.g. number of signal and background events used for training: nTrain_Signal=100:nTrain_Background=100)
 
  PREPARE_TRAINING_OPTIONS SplitMode=Random:!V
-* PREPARE_TRAINING_OPTIONS SplitMode=Block:!V
+* PREPARE_TRAINING_OPTIONS SplitMode=Block:!V:SplitSeed=0
 
 signal weight 
 * SIGNALWEIGHT 1.
