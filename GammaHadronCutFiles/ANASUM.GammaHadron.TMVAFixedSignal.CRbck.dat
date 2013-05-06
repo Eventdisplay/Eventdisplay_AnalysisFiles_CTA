@@ -4,7 +4,7 @@
  File to be used with the corresponding scripts in $EVNDISPSYS/scripts/CTA/:
  CTA.EFFAREA.sub_analyse.sh and CTA.EFFAREA.subAllParticle_analyse.sh
 
- Cuts are optimzied for 1% CU and 50 h of observations
+ fixed signal efficiency
 
  To be used for CR background simulations
 
@@ -19,7 +19,7 @@ successfull core and direction reconstruction (>=0.)
 distance of core position to telescopes [m]
 * arraycore -1. 1.e99
 (default value is 250)
-* telcoredistance 1.e99
+* telcoredistance 1.e99.
 size of the camera [deg], all events with direction
 outside that intervall are ignored
 * cameraedge -1. 1.e99
@@ -52,7 +52,16 @@ emission height
 
 v)  TMVA cuts
 TMVACUTS <MVA Method> <file index min> <file index max> <weight file (without energy bin index and suffix)>
+(DEFAULT 0 12)
 * TMVAPARAMETER BDT 0 8 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
-TMVACUTS <signal efficiency> <probability threshold> <Optimize (for source with this CU strength)> <observation time> <file with particle rates before cuts>
-(note that observation time is irrelevant for  the determination of the optimal cut)
-* TMVACUTS -99. -99. 0.01 50. PARTICLENUMBERFILE 1.e99 0.9
+TMVACUTS <signal efficiency> <probability threshold> <Optimize (for source with this CU strength)> <file with particle numbers before cuts>
+ TMVACUTS 0.4 -99.
+* TMVASignalEfficiency 0 1.00
+* TMVASignalEfficiency 1 0.40
+* TMVASignalEfficiency 2 0.30
+* TMVASignalEfficiency 3 0.25
+* TMVASignalEfficiency 4 0.35
+* TMVASignalEfficiency 5 0.60
+* TMVASignalEfficiency 6 0.65
+* TMVASignalEfficiency 7 0.65
+* TMVASignalEfficiency 8 0.80

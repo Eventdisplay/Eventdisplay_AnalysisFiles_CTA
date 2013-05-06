@@ -6,7 +6,7 @@
 
  Cuts are optimzied for 1% CU and 50 h of observations
 
- To be used for gamma simulations
+ To be used for CR background simulations
 
 ========================================================
 * cutselection 40 DIRECTIONCUT
@@ -32,7 +32,7 @@ replaced by parent script
 * arrayntel MINIMAGES 10000
 
 ii) direction cut [deg2]
-* angres 80
+* theta2cut THETA2MIN THETA2MAX
 
 iii) gamma hadron cuts:
 b) mean scaled width cut (use cut selector 0 in runlist)
@@ -55,4 +55,5 @@ TMVACUTS <MVA Method> <file index min> <file index max> <weight file (without en
 * TMVAPARAMETER BDT 0 8 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
 TMVACUTS <signal efficiency> <probability threshold> <Optimize (for source with this CU strength)> <observation time> <file with particle rates before cuts>
 (note that observation time is irrelevant for  the determination of the optimal cut)
-* TMVACUTS -99. -99. 0.01 50. PARTICLENUMBERFILE 1.e99 0.90
+* TMVACUTS -99. -99. 0.01 50. PARTICLENUMBERFILE 1.e99 0.9
+ TMVACUTS -99. -99. 0.03 1. PARTICLENUMBERFILE 1.e99 0.9

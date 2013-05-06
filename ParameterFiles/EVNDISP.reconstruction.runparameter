@@ -160,7 +160,7 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 * -100 MAXLOSS 0.2
 * -100 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
 * -37 MINFUI 0.0
 

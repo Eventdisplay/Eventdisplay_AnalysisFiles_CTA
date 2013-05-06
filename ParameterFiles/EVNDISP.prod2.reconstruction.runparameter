@@ -41,15 +41,8 @@ i) trace integration and image cleaning parameter
 
  image cleaning <method=TWOLEVELCLEANING/TIMECLUSTERCLEANING> <FIXED/VARIABLE>
 * -1 IMAGECLEANINGMETHOD TWOLEVELCLEANING VARIABLE
-* -1 IMAGECLEANINGTHRESHOLDS 5. 2.5
+* -1 IMAGECLEANINGTHRESHOLDS 5. 3.0
 
- -1 IMAGECLEANINGMETHOD TWOLEVELCLEANING FIXED
- image cleaning thresholds <image> <border>
-(image cleaning levels 10/5 * sqrt(NSB/0.1GHz) )
- -402 IMAGECLEANINGTHRESHOLDS 300. 250.
- -104 IMAGECLEANINGTHRESHOLDS 100. 80.
- -37 IMAGECLEANINGTHRESHOLDS 100. 80.
- -201509216 IMAGECLEANINGTHRESHOLDS 100. 80.
 
  image calculation at the edge of the camera
 * -1 LLEDGEFIT 0. 0
@@ -108,19 +101,15 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 
 * -387 MINTUBES 4
 * -387 MAXLOSS 0.05
-* -387 MINFUI 0.0
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
-* -104 MINFUI 0.0
 
 * -37 MINTUBES 4
 * -37 MAXLOSS 0.2
-* -37 MINFUI 0.0
 
 * -015 MINTUBES 4
 * -015 MAXLOSS 0.2
-* -015 MINFUI 0.0
 
 Quality cut set 1:
 all-purpose cuts for good sensitivity and good angular/energy resolution
@@ -134,19 +123,15 @@ L2 trigger type 0
 
 * -387 MINTUBES 4
 * -387 MAXLOSS 0.05
-* -387 MINFUI 0.0
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
-* -104 MINFUI 0.0
 
 * -37 MINTUBES 4
 * -37 MAXLOSS 0.2
-* -37 MINFUI 0.0
 
 * -015 MINTUBES 4
 * -015 MAXLOSS 0.2
-* -015 MINFUI 0.0
 
 Quality cut set 2:
 all-purpose cuts for good sensitivity and good angular/energy resolution
@@ -160,19 +145,15 @@ L2 trigger type 1
 
 * -387 MINTUBES 4
 * -387 MAXLOSS 0.05
-* -387 MINFUI 0.0
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
-* -104 MINFUI 0.0
 
 * -37 MINTUBES 4
 * -37 MAXLOSS 0.2
-* -37 MINFUI 0.0
 
 * -015 MINTUBES 4
 * -015 MAXLOSS 0.2
-* -015 MINFUI 0.0
 
 Quality cut set 3:
 all-purpose cuts for good sensitivity and good angular/energy resolution
@@ -186,17 +167,13 @@ L2 trigger type 2
 
 * -387 MINTUBES 4
 * -387 MAXLOSS 0.05
-* -387 MINFUI 0.0
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
-* -104 MINFUI 0.0
 
 * -37 MINTUBES 4
 * -37 MAXLOSS 0.2
-* -37 MINFUI 0.0
 
 * -015 MINTUBES 4
 * -015 MAXLOSS 0.2
-* -015 MINFUI 0.0
 
