@@ -55,5 +55,4 @@ TMVACUTS <MVA Method> <file index min> <file index max> <weight file (without en
 * TMVAPARAMETER BDT 0 8 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
 TMVACUTS <signal efficiency> <probability threshold> <Optimize (for source with this CU strength)> <observation time> <file with particle rates before cuts>
 (note that observation time is irrelevant for  the determination of the optimal cut)
-* TMVACUTS -99. -99. 0.01 50. PARTICLENUMBERFILE 1.e99 0.90
- TMVACUTS -99. -99. 0.03 1. PARTICLENUMBERFILE 1.e99 0.90
+* TMVACUTS 5. 10. 50. PARTICLENUMBERFILE 1.e99 0.90
