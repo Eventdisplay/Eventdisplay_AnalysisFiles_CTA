@@ -51,13 +51,5 @@ emission height
 
 
 v)  TMVA cuts
-* TMVAPARAMETER BDT 0 8 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
-* TMVASignalEfficiency 0 1.00
-* TMVASignalEfficiency 1 0.40
-* TMVASignalEfficiency 2 0.30
-* TMVASignalEfficiency 3 0.25
-* TMVASignalEfficiency 4 0.35
-* TMVASignalEfficiency 5 0.60
-* TMVASignalEfficiency 6 0.65
-* TMVASignalEfficiency 7 0.65
-* TMVASignalEfficiency 8 0.80
+* TMVAPARAMETER BDT 0 7 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
+* TMVASignalEfficiency 9999 0.40
