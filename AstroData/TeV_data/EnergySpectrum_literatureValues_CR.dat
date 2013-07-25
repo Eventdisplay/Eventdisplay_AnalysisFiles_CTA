@@ -68,3 +68,10 @@ Power law (type = 0 ):
 * REFERENCE CTA NOTES
 * VALUES 0 1. 0. 6.85e-9 0. -3.21. 0. 0.05 1.e6
 * END
+
+* NAME IFAE_electrons
+* OBSERVATORY LAT_HESS_MAGIC
+* SOURCE AM electrons
+* REFERENCE 20130725
+* VALUES 6 1. 0. 2.385e-9 0. 1.95 0. -0.101 0. 0.741 0. -3.43 0. 0.006 150.
+* END
