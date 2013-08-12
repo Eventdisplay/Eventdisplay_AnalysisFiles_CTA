@@ -44,7 +44,8 @@ b) mean scaled width cut (use cut selector 0 in runlist)
 iv) energy reconstruction cuts
 echi2 is a measure of the difference between the energies
 estimated per individual telescope
-* arrayechi2 0. 0.40
+ arrayechi2 0. 0.40
+* arrayechi2 0. 1.e6
 cut on energy of reconstruction shower (on linear energy scale, in [TeV])
 * arrayerec 0. 1.e99
 
