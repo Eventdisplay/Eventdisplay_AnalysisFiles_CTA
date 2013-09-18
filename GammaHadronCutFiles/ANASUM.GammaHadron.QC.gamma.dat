@@ -33,6 +33,10 @@ replaced by parent script
 
 * arrayntel MINIMAGES 10000
 
+* teltypegroup NTELTYPE0 0
+* teltypegroup NTELTYPE1 1
+* teltypegroup NTELTYPE2 2
+
 ii) direction cut [deg2]
 * theta2file ANGRESFILE IRF
 * angres 80

@@ -36,6 +36,10 @@ replaced by parent script
 ii) direction cut [deg2]
 * theta2cut THETA2MIN THETA2MAX
 
+* teltypegroup NTELTYPE0 0
+* teltypegroup NTELTYPE1 1
+* teltypegroup NTELTYPE2 2
+
 iii) gamma hadron cuts:
 b) mean scaled width cut (use cut selector 0 in runlist)
 * arraymscw -2. 2.
