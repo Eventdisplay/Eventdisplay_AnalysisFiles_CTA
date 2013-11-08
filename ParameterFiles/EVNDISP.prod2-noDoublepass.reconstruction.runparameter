@@ -32,70 +32,19 @@ i) trace integration and image cleaning parameter
 
  trace integration <integration method (0=off/1=default/2=sliding window)>
 * -1 FADCANALYSIS 1
- double pass method <doublepass (on=1, off=0)> <integration window length for pass 1> <integration method for pass 1 (0/1)>
+ double pass method <doublepass (on=1, off=0)> <integration window length for pass 1> <integration method for pass 1 (0/1)> <double pass error option (0/1)>
 * -1 FADCDOUBLEPASS 0 30 1
  trace integration window <window 1> <window 2>
 * -1 FADCSUMMATIONWINDOW 30 30
- trace integration start (for window 1) <sample> [optional: shift of window start for double pass]
-* -1 FADCSUMMATIONSTART 2 -1
+ trace integration start (for window 1) <sample> [optional: shift of window start for double pass] [optional: shift of window start for small images in double pass]
+* -1 FADCSUMMATIONSTART 2 -1 -1
 
  image cleaning <method=TWOLEVELCLEANING/TIMECLUSTERCLEANING> <FIXED/VARIABLE>
 * -1 IMAGECLEANINGMETHOD TWOLEVELCLEANING VARIABLE
-* -1 IMAGECLEANINGTHRESHOLDS 5. 2.5
-
- -1 IMAGECLEANINGMETHOD TWOLEVELCLEANING FIXED
- image cleaning thresholds <image> <border>
-(image cleaning levels 10/5 * sqrt(NSB/0.1GHz) )
- -402 IMAGECLEANINGTHRESHOLDS 300. 250.
- -104 IMAGECLEANINGTHRESHOLDS 100. 80.
- -37 IMAGECLEANINGTHRESHOLDS 100. 80.
- -201509216 IMAGECLEANINGTHRESHOLDS 100. 80.
+* -1 IMAGECLEANINGTHRESHOLDS 5. 3.0
 
  image calculation at the edge of the camera
 * -1 LLEDGEFIT 0. 0
-
-ii) quality cuts applied before the array analysis 
---------------------------------------------------
-
-USAGE:
-
-   to start a new set of cuts:
-
-   '* -1 RECMETHOD 4'
-
-   syntax:
-
-     <telescope type> <variable name> <variable value>
-
-   all line without '*' in the beginning are ignored
-
-   all operators are '>' or '<' (except for number of images, where it is '>=')
-
-   DEFAULTS:
-   minimum number of images required for stereo reconstruction
-    -1 MNIMAGE 2
-   minimum angle between image axes for two telescope analysis [deg]
-    -1 MINANGLE 5.
-   minimum number of channels for all telescopes
-    -1 MINTUBES 4
-   maximum number of low gain channels per telescope
-    -1 MAXLOWGAIN 5000
-   minimum local distance for all telescopes [deg]
-    -1 MINDIST -1.e3
-   maximum local distance for all telescopes [deg]
-    -1 MAXDIST  1.e3
-   minimum alpha for all telescopes [deg]
-    -1 MINALPHA -1.e3
-   maximum alpha for all telescopes [deg]
-    -1 MAXALPHA 1.e3
-   minimum image size for all telescopes [dc]
-    -1 MINSIZE 400
-   ignore all pointing corrections (default: off)
-    -1 USEEVNPOINTING 0
-   maximum loss of image size on edge of the camera [%]
-    -1 MAXLOSS 0.05
-   maximum width/length (to remove images to close to the telescopes)
-    -1 MAXWIDTHLENGTH 1.e10
 
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
@@ -105,91 +54,222 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 
 * -1 RECMETHOD 4
 * -1 MINSIZE 0
+* -1 MINANGLE 15.
 
-* -402 MINTUBES 4
-* -402 MAXLOSS 0.05
-* -402 MINFUI 0.0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
-* -104 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
-* -37 MINFUI 0.0
 
-* -73 MINTUBES 4
-* -73 MAXLOSS 0.2
-* -73 MINFUI 0.0
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
 
 Quality cut set 1:
 all-purpose cuts for good sensitivity and good angular/energy resolution
-(same as 0; with additional cut on angle between two image axis for two-telescope events)
+L2 trigger type 0
 
 * -1 RECMETHOD 4
 * -1 MINSIZE 0
 * -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 0
 
-* -402 MINTUBES 4
-* -402 MAXLOSS 0.05
-* -402 MINFUI 0.0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
-* -104 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
-* -37 MINFUI 0.0
 
-* -73 MINTUBES 4
-* -73 MAXLOSS 0.2
-* -73 MINFUI 0.0
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
 
 Quality cut set 2:
 all-purpose cuts for good sensitivity and good angular/energy resolution
-(same as 0; with additional cut on angle between two image axis for two-telescope events)
+L2 trigger type 1
 
 * -1 RECMETHOD 4
 * -1 MINSIZE 0
-* -1 MINANGLE 20.
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 1
 
-* -402 MINTUBES 4
-* -402 MAXLOSS 0.05
-* -402 MINFUI 0.0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
-* -104 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
-* -37 MINFUI 0.0
 
-* -73 MINTUBES 4
-* -73 MAXLOSS 0.2
-* -73 MINFUI 0.0
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
 
 Quality cut set 3:
 all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 2
 
 * -1 RECMETHOD 4
-* -1 MINSIZE 100.
-* -1 MINANGLE 20.
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 2
 
-* -402 MINTUBES 4
-* -402 MAXLOSS 0.05
-* -402 MINFUI 0.0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
-* -104 MINFUI 0.0
 
-* -37 MINTUBES 3
+* -37 MINTUBES 4
 * -37 MAXLOSS 0.2
-* -37 MINFUI 0.0
 
-* -73 MINTUBES 4
-* -73 MAXLOSS 0.2
-* -73 MINFUI 0.0
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 4:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 3
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 3
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Quality cut set 5:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+
+* -387 MINSIZE 0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
+Quality cut set 6:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 0
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 0
+
+* -387 MINSIZE 0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
+Quality cut set 7:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 1
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 1
+
+* -387 MINSIZE 0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
+Quality cut set 8:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 2
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 2
+
+* -387 MINSIZE 0
+* -387 MINTUBES 5
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
+Quality cut set 9:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 3
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 3
+
+* -387 MINSIZE 0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
 
