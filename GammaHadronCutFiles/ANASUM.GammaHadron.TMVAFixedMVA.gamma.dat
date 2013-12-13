@@ -35,7 +35,8 @@ replaced by parent script
 * teltypegroup NTELTYPE2 2
 
 ii) direction cut [deg2]
-* angres 80
+* angres 68
+* theta2scaling 1. 0.05
 
 iii) gamma hadron cuts:
 b) mean scaled width cut (use cut selector 0 in runlist)
