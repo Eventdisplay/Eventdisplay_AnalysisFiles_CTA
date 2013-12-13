@@ -49,6 +49,231 @@ i) trace integration and image cleaning parameter
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Quality cut set 0:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.2
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 1:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 0
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 0
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.2
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 2:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 1
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 1
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.2
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 3:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 2
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 2
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.2
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 4:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 3
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 3
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.2
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Quality cut set 0:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.3
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 1:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 0
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 0
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.3
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 2:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 1
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 1
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.3
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 3:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 2
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 2
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.3
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 4:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 3
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 3
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+* -387 MCENERGYRANGE_MAX 0.3
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 Quality cut set 0:
 all-purpose cuts for good sensitivity and good angular/energy resolution
 
