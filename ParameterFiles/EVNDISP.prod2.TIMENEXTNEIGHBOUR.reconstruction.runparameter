@@ -1,0 +1,279 @@
+eventdisplay reconstruction parameter file
+===========================================
+
+Note: all line without '*' in the beginning are ignored
+
+The following file describes the reconstruction parameters for eventdisplay:
+
+i) trace integration and image cleaning parameter
+
+ii) quality cuts applied before the array analysis 
+(reconstruction of shower core and direction).
+
+   Each set of cuts listed below correspond to one set of array parameters in the
+   eventdisplay output file (showerpars tree): 
+   for example: first set of cuts to Xcore[0], Ycore[0], etc., second set to Xcore[1], Ycore[1], ...
+
+   The maximum number of different set is 100 
+   (can be changed in VGlobalRunParameter: variable VDST_MAXRECMETHODS
+
+   mscw_energy reads the results of one set only, choose with -arrayrecid=RECID 
+   (e.g. for cut set 13: -arrayrecid=13)
+
+   (Note: There is some confusion between the words method and cut set in the array analysis code of
+   eventdisplay.)
+
+Note that these values override parameters given at the command line
+---------------------------------------------------------------------------------------------------
+
+
+i) trace integration and image cleaning parameter
+--------------------------------------------------
+
+ trace integration <integration method (0/1)>
+* -1 FADCANALYSIS 2
+ double pass method <doublepass (on=1, off=0)> <integration window length for pass 1> <integration method for pass 1 (0/1)>
+* -1 FADCDOUBLEPASS 0 12 0
+ trace integration window <window 1> <window 2>
+* -1 FADCSUMMATIONWINDOW 4 18
+ trace integration start (for window 1) <sample> [optional: shift of window start for double pass]
+* -1 FADCSUMMATIONSTART 2 -1
+
+ image cleaning <method=TWOLEVELCLEANING/TIMECLUSTERCLEANING> <FIXED/VARIABLE>
+* -1 IMAGECLEANINGMETHOD TIMENEXTNEIGHBOUR FIXED
+
+* -413 IMAGECLEANINGTHRESHOLDS 107. 54.
+* -10018 IMAGECLEANINGTHRESHOLDS 107. 54.
+* -37 IMAGECLEANINGTHRESHOLDS 100. 50.
+* -10025 IMAGECLEANINGTHRESHOLDS 107. 54.
+* -73 IMAGECLEANINGTHRESHOLDS 107. 54.
+
+ image calculation at the edge of the camera
+* -1 LLEDGEFIT 0. 0
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Quality cut set 0:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 1:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 0
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 0
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 2:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 1
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 1
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 3:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 2
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 2
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+Quality cut set 4:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 3
+
+* -1 RECMETHOD 4
+* -1 MINSIZE 0
+* -1 MINANGLE 15.
+* -1 L2TRIGGERTYPE 3
+
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+
+* -015 MINTUBES 4
+* -015 MAXLOSS 0.2
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Quality cut set 5:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+
+* -387 MINSIZE 0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
+Quality cut set 6:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 0
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 0
+
+* -387 MINSIZE 0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
+Quality cut set 7:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 1
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 1
+
+* -387 MINSIZE 0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
+Quality cut set 8:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 2
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 2
+
+* -387 MINSIZE 0
+* -387 MINTUBES 5
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
+Quality cut set 9:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+L2 trigger type 3
+
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+* -1 L2TRIGGERTYPE 3
+
+* -387 MINSIZE 0
+* -387 MINTUBES 4
+* -387 MAXLOSS 0.05
+
+* -104 MINSIZE 0
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+
+* -37 MINSIZE 300
+* -37 MINTUBES 5
+* -37 MAXLOSS 0.2
+
+* -015 MINSIZE 300
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.2
+
