@@ -1,0 +1,18 @@
+# Mapping file for merging prod-2 data from standard 197-telescope
+# simulation with SC-SST from dedicated 102-telescope simulation
+# into subset '2Z'.
+
+# 4 LSTs from standard simulation (new IDs: 1 to 4):
+1 1,2,4,5 
+
+# 24 MSTs from std. sim. (new IDs: 5 to 28):
+1 6,10,14-22,25,26,29,30,33,40-42,45,46,49,50,53 
+
+# All 68 SC-SSTs are taken from the special SC-SST simulation.
+# Note that these are the original IDs as in the standard simulation
+# even though there are ignored telescopes in that simulation.
+# Resulting IDs in the merged file are 29 to 96.
+# To have them appear in ascending order, the input telescope IDs must also
+# be in ascending order:
+2 7-9,11-13,27,28,31,32,34-39,47,48,51,52,54-59,97,100-105,108-114,117-124,127-132,135-141,144-150
+
