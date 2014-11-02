@@ -26,23 +26,46 @@ ii) quality cuts applied before the array analysis
 Note that these values override parameters given at the command line
 ---------------------------------------------------------------------------------------------------
 
+Telescope types:
+
+-387: LST
+-104: MST
+-37:  DCSST
+-015: SCSST
 
 i) trace integration and image cleaning parameter
 --------------------------------------------------
 
  trace integration <integration method (0=off/1=default/2=sliding window)>
-* -1 FADCANALYSIS 1
+* -387 FADCANALYSIS 1
+* -104 FADCANALYSIS 1
+* -37  FADCANALYSIS 1
+* -015 FADCANALYSIS 2
  double pass method <doublepass (on=1, off=0)> <integration window length for pass 1> <integration method for pass 1 (0/1)> <double pass error option (0/1)>
-* -1 FADCDOUBLEPASS 1 30 1 1
+* -387 FADCDOUBLEPASS 1 30 1 1
+* -104 FADCDOUBLEPASS 1 30 1 1
+* -37  FADCDOUBLEPASS 1 30 1 1
+* -015 FADCDOUBLEPASS 0 30 1 1
  trace integration window <window 1> <window 2>
 * -1 FADCSUMMATIONWINDOW 6 18
  trace integration start (for window 1) <sample> [optional: shift of window start for double pass] [optional: shift of window start for small images in double pass]
-* -1 FADCSUMMATIONSTART 2 -1 T0
+* -387 FADCSUMMATIONSTART 2 -1 T0
+* -104 FADCSUMMATIONSTART 2 -1 T0
+* -37  FADCSUMMATIONSTART 2 -1 T0
+* -015 FADCSUMMATIONSTART 2 -3 T0
 
  image cleaning <method=TWOLEVELCLEANING/TIMECLUSTERCLEANING> <FIXED/VARIABLE>
-* -1 IMAGECLEANINGMETHOD TWOLEVELCLEANING VARIABLE
-* -1 IMAGECLEANINGTHRESHOLDS 5. 4.0
- -1 IMAGECLEANINGTHRESHOLDS 5. 3.0
+* -387 IMAGECLEANINGMETHOD TIMETWOLEVEL VARIABLE
+* -387 IMAGECLEANINGTHRESHOLDS 5. 4.0
+* -387 TIMETWOLEVELPARAMETERS 2.5
+* -104 IMAGECLEANINGMETHOD TIMETWOLEVEL VARIABLE
+* -104 IMAGECLEANINGTHRESHOLDS 6.0 4.0
+* -104 TIMETWOLEVELPARAMETERS 2.0
+* -37  IMAGECLEANINGMETHOD TWOLEVELCLEANING VARIABLE
+* -37  IMAGECLEANINGTHRESHOLDS 5. 4.0
+* -015 IMAGECLEANINGMETHOD TIMETWOLEVEL VARIABLE
+* -015 IMAGECLEANINGTHRESHOLDS 5. 4.0
+* -015 TIMETWOLEVELPARAMETERS 3.0
 
  image calculation at the edge of the camera
 * -1 LLEDGEFIT 0. 0
@@ -54,9 +77,9 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 
 * -1 RECMETHOD 4
 * -1 MINSIZE 0
-* -1 MINANGLE 15.
+* -1 MINANGLE 10.
 
-* -387 MINTUBES 4
+* -387 MINTUBES 3
 * -387 MAXLOSS 0.05
 
 * -104 MINTUBES 4
@@ -150,126 +173,5 @@ L2 trigger type 3
 * -37 MAXLOSS 0.2
 
 * -015 MINTUBES 4
-* -015 MAXLOSS 0.2
-
----------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------
-Quality cut set 5:
-all-purpose cuts for good sensitivity and good angular/energy resolution
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 20.
-
-* -387 MINSIZE 0
-* -387 MINTUBES 4
-* -387 MAXLOSS 0.05
-
-* -104 MINSIZE 0
-* -104 MINTUBES 4
-* -104 MAXLOSS 0.2
-
-* -37 MINSIZE 300
-* -37 MINTUBES 5
-* -37 MAXLOSS 0.2
-
-* -015 MINSIZE 300
-* -015 MINTUBES 5
-* -015 MAXLOSS 0.2
-
-Quality cut set 6:
-all-purpose cuts for good sensitivity and good angular/energy resolution
-L2 trigger type 0
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 20.
-* -1 L2TRIGGERTYPE 0
-
-* -387 MINSIZE 0
-* -387 MINTUBES 4
-* -387 MAXLOSS 0.05
-
-* -104 MINSIZE 0
-* -104 MINTUBES 4
-* -104 MAXLOSS 0.2
-
-* -37 MINSIZE 300
-* -37 MINTUBES 5
-* -37 MAXLOSS 0.2
-
-* -015 MINSIZE 300
-* -015 MINTUBES 5
-* -015 MAXLOSS 0.2
-
-Quality cut set 7:
-all-purpose cuts for good sensitivity and good angular/energy resolution
-L2 trigger type 1
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 20.
-* -1 L2TRIGGERTYPE 1
-
-* -387 MINSIZE 0
-* -387 MINTUBES 4
-* -387 MAXLOSS 0.05
-
-* -104 MINSIZE 0
-* -104 MINTUBES 4
-* -104 MAXLOSS 0.2
-
-* -37 MINSIZE 300
-* -37 MINTUBES 5
-* -37 MAXLOSS 0.2
-
-* -015 MINSIZE 300
-* -015 MINTUBES 5
-* -015 MAXLOSS 0.2
-
-Quality cut set 8:
-all-purpose cuts for good sensitivity and good angular/energy resolution
-L2 trigger type 2
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 20.
-* -1 L2TRIGGERTYPE 2
-
-* -387 MINSIZE 0
-* -387 MINTUBES 5
-* -387 MAXLOSS 0.05
-
-* -104 MINSIZE 0
-* -104 MINTUBES 4
-* -104 MAXLOSS 0.2
-
-* -37 MINSIZE 300
-* -37 MINTUBES 5
-* -37 MAXLOSS 0.2
-
-* -015 MINSIZE 300
-* -015 MINTUBES 5
-* -015 MAXLOSS 0.2
-
-Quality cut set 9:
-all-purpose cuts for good sensitivity and good angular/energy resolution
-L2 trigger type 3
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 20.
-* -1 L2TRIGGERTYPE 3
-
-* -387 MINSIZE 0
-* -387 MINTUBES 4
-* -387 MAXLOSS 0.05
-
-* -104 MINSIZE 0
-* -104 MINTUBES 4
-* -104 MAXLOSS 0.2
-
-* -37 MINSIZE 300
-* -37 MINTUBES 5
-* -37 MAXLOSS 0.2
-
-* -015 MINSIZE 300
-* -015 MINTUBES 5
 * -015 MAXLOSS 0.2
 
