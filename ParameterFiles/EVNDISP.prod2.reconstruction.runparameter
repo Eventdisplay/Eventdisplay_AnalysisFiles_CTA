@@ -91,6 +91,8 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 * -015 MINTUBES 4
 * -015 MAXLOSS 0.2
 
+<<<<<<< .mine
+=======
 Quality cut set 1:
 all-purpose cuts for good sensitivity and good angular/energy resolution
 L2 trigger type 0
