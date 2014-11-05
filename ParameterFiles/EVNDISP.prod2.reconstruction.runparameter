@@ -68,7 +68,10 @@ i) trace integration and image cleaning parameter
 * -015 TIMETWOLEVELPARAMETERS 3.0
 
  image calculation at the edge of the camera
-* -1 LLEDGEFIT 0. 0
+* -387 LLEDGEFIT 0. 0
+* -104 LLEDGEFIT 0. 0
+* -37  LLEDGEFIT 0. 0
+* -015 LLEDGEFIT 0.1 0
 
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
