@@ -42,10 +42,10 @@ i) trace integration and image cleaning parameter
 * -37  FADCANALYSIS 1
 * -015 FADCANALYSIS 2
  double pass method <doublepass (on=1, off=0)> <integration window length for pass 1> <integration method for pass 1 (0/1)> <double pass error option (0/1)>
-* -387 FADCDOUBLEPASS 1 30 1 1
-* -104 FADCDOUBLEPASS 1 30 1 1
-* -37  FADCDOUBLEPASS 1 30 1 1
-* -015 FADCDOUBLEPASS 0 30 1 1
+* -387 FADCDOUBLEPASS 1 6 1 0
+* -104 FADCDOUBLEPASS 1 6 1 0
+* -37  FADCDOUBLEPASS 1 6 1 0
+* -015 FADCDOUBLEPASS 0 6 1 0
  trace integration window <window 1> <window 2>
 * -1 FADCSUMMATIONWINDOW 6 18
  trace integration start (for window 1) <sample> [optional: shift of window start for double pass] [optional: shift of window start for small images in double pass]
@@ -71,10 +71,10 @@ i) trace integration and image cleaning parameter
 * -015 TIMETWOLEVELPARAMETERS 2.0
 
  image calculation at the edge of the camera
-* -387 LLEDGEFIT 0. 0
-* -104 LLEDGEFIT 0. 0
-* -37  LLEDGEFIT 0. 0
-* -015 LLEDGEFIT 0.1 0
+* -387 LLEDGEFIT 0.1 5
+* -104 LLEDGEFIT 0.1 5
+* -37  LLEDGEFIT 0.1 5
+* -015 LLEDGEFIT 0.1 5
 
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
@@ -82,21 +82,51 @@ Quality cut set 0:
 all-purpose cuts for good sensitivity and good angular/energy resolution
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 15.
 
 * -387 MINTUBES 3
-* -387 MAXLOSS 0.05
+* -387 MAXLOSS 0.1
 * -387 MINSIZE 0
+* -387 MINANGLE 10.
 
 * -104 MINTUBES 4
 * -104 MAXLOSS 0.2
 * -104 MINSIZE 0
+* -104 MINANGLE 15.
 
 * -37 MINTUBES 4
 * -37 MAXLOSS 0.2
 * -37 MINSIZE 0
+* -37 MINANGLE 15.
 
 * -015 MINTUBES 5
-* -015 MAXLOSS 0.2
+* -015 MAXLOSS 0.3
 * -015 MINSIZE 100
+* -015 MINANGLE 15.
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Quality cut set 0:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+
+* -387 MINTUBES 3
+* -387 MAXLOSS 0.1
+* -387 MINSIZE 0
+* -387 MINANGLE 5.
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+* -104 MINSIZE 0
+* -104 MINANGLE 15.
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+* -37 MINSIZE 0
+* -37 MINANGLE 15.
+
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.3
+* -015 MINSIZE 75
+* -015 MINANGLE 15.
 
