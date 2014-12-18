@@ -105,7 +105,7 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
-Quality cut set 0:
+Quality cut set 1:
 all-purpose cuts for good sensitivity and good angular/energy resolution
 
 * -1 RECMETHOD 4
@@ -130,3 +130,56 @@ all-purpose cuts for good sensitivity and good angular/energy resolution
 * -015 MINSIZE 75
 * -015 MINANGLE 15.
 
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Quality cut set 2:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+
+* -387 MINTUBES 3
+* -387 MAXLOSS 0.1
+* -387 MINSIZE 0
+* -387 MINANGLE 10.
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+* -104 MINSIZE 0
+* -104 MINANGLE 15.
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+* -37 MINSIZE 0
+* -37 MINANGLE 15.
+
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.3
+* -015 MINSIZE 150
+* -015 MINANGLE 15.
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+Quality cut set 3:
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+
+* -387 MINTUBES 3
+* -387 MAXLOSS 0.1
+* -387 MINSIZE 0
+* -387 MINANGLE 10.
+
+* -104 MINTUBES 4
+* -104 MAXLOSS 0.2
+* -104 MINSIZE 0
+* -104 MINANGLE 15.
+
+* -37 MINTUBES 4
+* -37 MAXLOSS 0.2
+* -37 MINSIZE 0
+* -37 MINANGLE 15.
+
+* -015 MINTUBES 5
+* -015 MAXLOSS 0.3
+* -015 MINSIZE 200
+* -015 MINANGLE 15.
