@@ -1,0 +1,143 @@
+eventdisplay reconstruction parameter file
+===========================================
+
+Note: all line without '*' in the beginning are ignored
+
+The following file describes the reconstruction parameters for eventdisplay:
+
+i) trace integration and image cleaning parameter
+
+ii) quality cuts applied before the array analysis 
+(reconstruction of shower core and direction).
+
+   Each set of cuts listed below correspond to one set of array parameters in the
+   eventdisplay output file (showerpars tree): 
+   for example: first set of cuts to Xcore[0], Ycore[0], etc., second set to Xcore[1], Ycore[1], ...
+
+   The maximum number of different set is 100 
+   (can be changed in VGlobalRunParameter: variable VDST_MAXRECMETHODS
+
+   mscw_energy reads the results of one set only, choose with -arrayrecid=RECID 
+   (e.g. for cut set 13: -arrayrecid=13)
+
+   (Note: There is some confusion between the words method and cut set in the array analysis code of
+   eventdisplay.)
+
+Note that these values override parameters given at the command line
+---------------------------------------------------------------------------------------------------
+
+CTA Telescope types:
+
+-387: LST
+-104: MST
+-37:  DCSST
+-015: SCSST
+
+trace integration and image cleaning parameter
+--------------------------------------------------
+
+ trace integration <integration method (0=off/1=default/2=sliding window)>
+* -387 FADCANALYSIS 2
+* -104 FADCANALYSIS 2
+* -37  FADCANALYSIS 2
+* -015 FADCANALYSIS 2
+
+ double pass method 
+    Par1: <doublepass (on=1, off=0)>
+    Par2: <integration window length for pass 1>  
+    Par3: <integration method for pass 1 (1/2)>
+    Par4: <double pass error option (0/1)>
+    Par5: <time difference between LG and HG T0 (default -5 samples)>
+* -387 FADCDOUBLEPASS 0 6 2 0
+* -104 FADCDOUBLEPASS 0 6 2 0
+* -37  FADCDOUBLEPASS 0 6 2 0
+* -015 FADCDOUBLEPASS 0 6 2 0
+
+ trace integration window <window 1> <window 2>
+* -387 FADCSUMMATIONWINDOW 6 6
+* -104 FADCSUMMATIONWINDOW 6 6
+* -37  FADCSUMMATIONWINDOW 6 6
+* -015 FADCSUMMATIONWINDOW 6 6
+
+ trace integration start (for window 1 for integration method 1)
+    Par1: <sample # of window start> 
+    Par2: <shift of window start for double pass>
+    Par3: <timing method used for calculation of window start (FIXED/TZERO/TAVERAGE)>
+    Par4: <max difference between T0 and trace integration start>
+* -387 FADCSUMMATIONSTART 0 0 TZERO -4
+* -104 FADCSUMMATIONSTART 0 0 TZERO -4
+* -37  FADCSUMMATIONSTART 0 0 TZERO -4
+* -015 FADCSUMMATIONSTART 0 0 TZERO -4
+
+
+ image cleaning <method=TWOLEVELCLEANING/TIMECLUSTERCLEANING/TIMETWOLEVEL/CLUSTERCLEANING> <FIXED/VARIABLE>
+* -387 IMAGECLEANINGMETHOD TIMENEXTNEIGHBOUR FIXED
+* -387 IMAGECLEANINGTHRESHOLDS 5. 4.0
+
+* -387 IMAGECLEANINGMETHOD_DP1 CLUSTERCLEANING VARIABLE
+* -387 IMAGECLEANINGTHRESHOLDS_DP1 5. 4.0
+* -387 CLUSTERCLEANINGPARAMETERS_DP1 -1 0 2
+
+* -104 IMAGECLEANINGMETHOD TIMENEXTNEIGHBOUR FIXED
+* -104 IMAGECLEANINGTHRESHOLDS 5.0 4.0
+
+* -104 IMAGECLEANINGMETHOD_DP1 CLUSTERCLEANING VARIABLE
+* -104 IMAGECLEANINGTHRESHOLDS_DP1 5.0 4.0
+* -104 CLUSTERCLEANINGPARAMETERS_DP1 -1 0 2
+
+* -37  IMAGECLEANINGMETHOD TIMENEXTNEIGHBOUR FIXED
+* -37  IMAGECLEANINGTHRESHOLDS 5. 4.0
+
+* -015 IMAGECLEANINGMETHOD CLUSTERCLEANING VARIABLE
+* -015 IMAGECLEANINGTHRESHOLDS 7. 6.0
+* -015 CLUSTERCLEANINGPARAMETERS -1 0 2
+
+ image calculation at the edge of the camera
+  <start fit for image with at least this loss> <min number of tubes>
+* -387 LLEDGEFIT 1.0 5
+* -104 LLEDGEFIT 0.1 5
+* -37  LLEDGEFIT 0.1 5
+* -015 LLEDGEFIT 0.1 5
+
+ change the default neighbour search by increasing the search area by this factor
+* -387 NEIGHBOURDISTANCEFACTOR 1.
+* -104 NEIGHBOURDISTANCEFACTOR 1.
+* -37  NEIGHBOURDISTANCEFACTOR 1.
+* -015 NEIGHBOURDISTANCEFACTOR 2.
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+all-purpose cuts for good sensitivity and good angular/energy resolution
+
+* -1 RECMETHOD 4
+
+LST settings
+* -387 MINANGLE 10.
+* -387 NTUBES    4    10000
+* -387 LOSS1      -1.  0.1  0  10
+* -387 LOSS1      -1.  0.2  10 10000
+* -387 SIZE      0  1.e10
+ 
+
+MST settings
+* -104 MINANGLE 15.
+* -104 NTUBES    4    10000
+* -104 LOSS1      -1.  0.25  0  10
+* -104 LOSS1      -1.  0.40  10 10000
+* -104 SIZE      0  1.e10
+
+
+SST settings
+* -37 MINANGLE 15.
+* -37 NTUBES    4    10000
+* -37 LOSS1      -1.  0.25  0  10
+* -37 LOSS1      -1.  0.40  10 10000
+* -37 SIZE      0  1.e10
+
+SST settings
+* -015 MINANGLE 15.
+* -015 NTUBES    6    10000
+* -015 LOSS1      -1.  0.25  0  10
+* -015 LOSS1      -1.  0.40  10 10000
+* -015 SIZE      0  1.e10
+
