@@ -17,9 +17,9 @@ i) stereo quality cuts
 successfull core and direction reconstruction (>=0.)
 * arraychi2 0. 1.e99
 distance of core position to telescopes [m]
-* arraycore -1. 1.e99
+* arraycore -1. 1.e99 2
 (default value is 250)
-* telcoredistance 1.e99.
+* telcoredistance 1.e99
 size of the camera [deg], all events with direction
 outside that intervall are ignored
 * cameraedge -1. 1.e99
@@ -31,9 +31,11 @@ replaced by parent script
 
 * arrayntel MINIMAGES 10000
 
-* teltypegroup NTELTYPE0 0
-* teltypegroup NTELTYPE1 1
-* teltypegroup NTELTYPE2 2
+ teltypegroup NTELTYPE0 0
+ teltypegroup NTELTYPE1 1
+ teltypegroup NTELTYPE2 2
+* nimages_teltype 3 201509515
+* nimages_teltype 2 10408418 138704810
 
 ii) direction cut [deg2]
 * theta2cut THETA2MIN THETA2MAX
@@ -46,8 +48,8 @@ b) mean scaled width cut (use cut selector 0 in runlist)
 iv) energy reconstruction cuts
 echi2 is a measure of the difference between the energies
 estimated per individual telescope
- arrayechi2 0. 0.40
-* arrayechi2 0. 1.e6
+ arrayechi2 0. 1.e6
+* arrayechi2 0. 0.5
 cut on energy of reconstruction shower (on linear energy scale, in [TeV])
 * arrayerec 0. 1.e99
 
