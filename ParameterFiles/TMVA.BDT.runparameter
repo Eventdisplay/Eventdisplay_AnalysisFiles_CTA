@@ -12,7 +12,17 @@ optimization method (MC or GA)
 (SplitSeed=0)
 
  MVA_METHOD BDT
+DEFAULT
 * MVA_METHOD BDT NTrees=400:MaxDepth=3
+20141202
+ MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:nEventsMin=100:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=50
+20141213
+ MVA_METHOD BDT NTrees=400:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:AdaBoostBeta=1.0:UseYesNoLeaf=True:MaxDepth=5
+20141216
+ MVA_METHOD BDT NTrees=400:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:AdaBoostBeta=1.0:UseYesNoLeaf=True:MaxDepth=50
+20141217
+ MVA_METHOD BDT NTrees=400:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:AdaBoostBeta=1.0:UseYesNoLeaf=True:MaxDepth=50:PruneMethod=CostComplexity:PruneStrength=50
+
  MVA_METHOD BOXCUTS FitMethod=GA:PopSize=3000
 
 ##############################################
@@ -62,7 +72,7 @@ MINEVENTS <signal events> <background events>
 Selection cut before training
 (similar to TTree::Draw() selection cuts)
 
-* SELECTION_CUTS MSCW>-2.&&MSCW<2.&&MSCL>-2.&&MSCL<5.&&ENERGYCHI2VARIABLE>=0.&&ENERGYVARIABLE>0.&&EmissionHeight>0.&&NImages>=MINIMAGES&&ENERGYDEVARIABLE>=0.&&MINIMAGETYPECUT
+* SELECTION_CUTS MSCW>-2.&&MSCW<2.&&MSCL>-2.&&MSCL<5.&&ENERGYCHI2VARIABLE>=0.&&ENERGYVARIABLE>0.&&EmissionHeight>0.&&EmissionHeight<50.&&NImages>=MINIMAGES&&ENERGYDEVARIABLE>=0.&&MINIMAGETYPECUT
 
 ##############################################
 Prepare training options
