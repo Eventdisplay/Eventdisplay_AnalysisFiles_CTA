@@ -21,6 +21,13 @@ CTA Telescope types:
 -37:  DCSST
 -015: SCSST
 
+10408618: FlashCam MST
+10408418: NectraCam MST
+201511619: ASTRI SST
+201309316: GC-SST
+909924: DC-SST
+207308707: SC-MST
+
 trace integration and image cleaning parameter
 --------------------------------------------------
 
