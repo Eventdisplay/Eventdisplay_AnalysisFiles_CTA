@@ -40,7 +40,7 @@ ReadIPRfromDatabase: FALSE
 IPRdatabase:   EVNDISP_ANALYSIS_DIRECTORY
 ##############
 # If write NN Image cleaning graphs (prob. curves, IPR graphs, etc..) to a GraphsFile file
-WriteGraphsToFile: TRUE
+WriteGraphsToFile: FALSE
 # (set this to EVNDISP_ANALYSIS_DIRECTORY and it will be written into this directory
 #  output file will be <runnumber>.IPR.root)
 GraphsFile:  EVNDISP_ANALYSIS_DIRECTORY
