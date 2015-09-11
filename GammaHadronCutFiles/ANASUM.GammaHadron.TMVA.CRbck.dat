@@ -34,8 +34,8 @@ replaced by parent script
  teltypegroup NTELTYPE0 0
  teltypegroup NTELTYPE1 1
  teltypegroup NTELTYPE2 2
-* nimages_teltype 3 201509515
-* nimages_teltype 2 10408418 138704810
+* nimages_teltype 3 201509515 201309316 201511619 909924
+* nimages_teltype 2 10408418 138704810 10408618 
 
 ii) direction cut [deg2]
 * theta2cut THETA2MIN THETA2MAX
