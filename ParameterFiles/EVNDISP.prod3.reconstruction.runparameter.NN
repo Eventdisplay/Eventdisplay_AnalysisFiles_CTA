@@ -30,9 +30,12 @@ CTA Telescope types:
 trace integration and image cleaning parameter
 --------------------------------------------------
 
- trace integration <integration method (0=off/1=default/2=sliding window)>
+ trace integration <integration method (0=off/1=default/2=sliding window)> <digital filter on> <upsample parameter> <pole zero>
 * -387      FADCANALYSIS 2
-* 10408618  FADCANALYSIS 2
+FlashCam digitial filtering analysis 
+(pole zero value derived from pulse_FlashCam_raw2.dat)
+* 10408618  FADCANALYSIS 6 1 4 0.75
+ 10408618  FADCANALYSIS 2 
 * 10408418  FADCANALYSIS 2
 no trace integration for ASTRI
 * 201511619 FADCANALYSIS 0
@@ -86,7 +89,7 @@ LSTs
 MSTs
 * 10408618 IMAGECLEANINGMETHOD TIMENEXTNEIGHBOUR FIXED
 * 10408418 IMAGECLEANINGMETHOD TIMENEXTNEIGHBOUR FIXED
-ASTO-SSTs
+ASTRI-SSTs
 * 201511619 IMAGECLEANINGMETHOD CLUSTERCLEANING FIXED
 * 201511619 IMAGECLEANINGTHRESHOLDS 500. 400.
 * 201511619 CLUSTERCLEANINGPARAMETERS -1 0 2
