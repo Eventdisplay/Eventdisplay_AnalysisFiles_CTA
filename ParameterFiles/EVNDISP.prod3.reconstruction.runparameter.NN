@@ -31,10 +31,11 @@ trace integration and image cleaning parameter
 --------------------------------------------------
 
  trace integration <integration method (0=off/1=default/2=sliding window)> <digital filter on> <upsample parameter> <pole zero>
+ (digital filter is by default off)
 * -387      FADCANALYSIS 2
 FlashCam digitial filtering analysis 
 (pole zero value derived from pulse_FlashCam_raw2.dat)
-* 10408618  FADCANALYSIS 6 1 4 0.75
+* 10408618  FADCANALYSIS 2 1 4 0.75
  10408618  FADCANALYSIS 2 
 * 10408418  FADCANALYSIS 2
 no trace integration for ASTRI
@@ -51,7 +52,7 @@ double pass for SC-SSTs
     Par4: <double pass error option (0/1)>
     Par5: <time difference between LG and HG T0 (default -5 samples)>
 * -387      FADCDOUBLEPASS 0 6 2 0
-* 10408618  FADCDOUBLEPASS 0 6 2 0
+* 10408618  FADCDOUBLEPASS 0 2 2 0
 * 10408418  FADCDOUBLEPASS 0 6 2 0
 * 201511619 FADCDOUBLEPASS 0 6 2 0
 GC telescopes
@@ -62,25 +63,28 @@ GC telescopes
  trace integration window <window 1> <window 2>
  (TODO: check trace integration window for different readouts)
 * -387      FADCSUMMATIONWINDOW 6 6
-* 10408618  FADCSUMMATIONWINDOW 6 6
+* 10408618  FADCSUMMATIONWINDOW 2 2
 * 10408418  FADCSUMMATIONWINDOW 6 6
 * 201511619 FADCSUMMATIONWINDOW 6 6
 * 201309316 FADCSUMMATIONWINDOW 10 10
 * 201309415 FADCSUMMATIONWINDOW 6 6
 * 909924    FADCSUMMATIONWINDOW 6 6
 
- trace integration start (for window 1 for integration method 1)
+ trace integration start 
+ (for window 1 for integration method 1)
     Par1: <sample # of window start> 
     Par2: <shift of window start for double pass>
     Par3: <timing method used for calculation of window start (FIXED/TZERO/TAVERAGE)>
     Par4: <max difference between T0 and trace integration start>
+    Par5: <max trace sample for sliding window search (default: nsamples)>
 * -387      FADCSUMMATIONSTART 1 0 TAVERAGE -4
-* 10408618  FADCSUMMATIONSTART 1 0 TAVERAGE -4
-* 10408418  FADCSUMMATIONSTART 1 0 TAVERAGE -4
-* 201511619 FADCSUMMATIONSTART 1 0 TAVERAGE -4
-* 201309316 FADCSUMMATIONSTART 1 0 TAVERAGE -4
-* 201309415 FADCSUMMATIONSTART 1 0 TAVERAGE -4
-* 909924    FADCSUMMATIONSTART 1 0 TAVERAGE -4
+FlashCam: restrict search window 
+* 10408618  FADCSUMMATIONSTART 10 0 TAVERAGE -4 95
+* 10408418  FADCSUMMATIONSTART 0  0 TAVERAGE -4
+* 201511619 FADCSUMMATIONSTART 0  0 TAVERAGE -4
+* 201309316 FADCSUMMATIONSTART 0  0 TAVERAGE -4
+* 201309415 FADCSUMMATIONSTART 0  0 TAVERAGE -4
+* 909924    FADCSUMMATIONSTART 0  0 TAVERAGE -4
 
 
  image cleaning <method=TWOLEVELCLEANING/TIMECLUSTERCLEANING/TIMETWOLEVEL/CLUSTERCLEANING> <FIXED/VARIABLE>
