@@ -11,20 +11,6 @@
 #  
 #
 ##############
-# Telescope Types
-#
-# VERITAS: set ifVTS TRUE
-#
-# CTA TelTypes:  0 = empty, 1 = LST, 2 = MST, 3 = SCT,4 = SST, 5 = empty  
-#
-# IF analyze telescope of a certain type (ambiguous, set all implemented tels to TRUE) 
-# NOTE:  SCT (type 3) not implemented yet !!!
-ifVTS: FALSE
-ifLST: TRUE
-ifMST: TRUE
-ifSCT: FALSE
-ifSST: FALSE
-##############
 # Create IPR database from DST file containing ped charge histos (hpedPerTelescopeType) and write it to the IPRdatabaseFile 
 CreateIPRdatabase: FALSE
 # (set this to EVNDISP_ANALYSIS_DIRECTORY and it will be written into this directory
@@ -55,8 +41,8 @@ FakeImageProb: 0.5E-3   # 0.5 % per telescope
 # NOTE: number of telescope types must be equal to VDTS_MAXTELTYPES (fill with zeros the empty tel types)
 # groupType\TelType:  0-3 (4 VTS telescopes)
 #             0 1 2 3 4 5
-if4nn:        1,1,1,1,0,0      
-if2plus1nn:   1,1,1,1,0,0      # sparse 3-pixel group: 2nn and 1 pixel in the vicinity 
-if3nn:        1,1,1,1,0,0
-if2nn:        1,1,1,1,0,0
+if4nn:        1,1,1,1,1,1      
+if2plus1nn:   1,1,1,1,1,1      # sparse 3-pixel group: 2nn and 1 pixel in the vicinity 
+if3nn:        1,1,1,1,1,1
+if2nn:        1,1,1,1,1,1
 ##############
