@@ -12,8 +12,16 @@ optimization method (MC or GA)
 (SplitSeed=0)
 
  MVA_METHOD BDT
-DEFAULT
-* MVA_METHOD BDT NTrees=400:MaxDepth=3
+DEFAULT (updated from MaxDepth=3, 2015-11-19)
+ MVA_METHOD BDT NTrees=400:MaxDepth=5
+ V4
+ MVA_METHOD BDT NTrees=400:MaxDepth=10
+ V3
+ MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:nEventsMin=100:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=50
+ V5 (Dan, new default)
+* MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=100:nEventsMin=30:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=500
+ V6/V7
+ MVA_METHOD BDT NTrees=200:BoostType=Bagging:SeparationType=GiniIndex:DoBoostMonitor=True:UseNvars=4.5:UsePoissonNvars:UseRandomisedTrees:BaggedSampleFraction=1.0:UseBaggedBoost
 20141202
  MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:nEventsMin=100:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=50
 20141213
@@ -22,6 +30,8 @@ DEFAULT
  MVA_METHOD BDT NTrees=400:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:AdaBoostBeta=1.0:UseYesNoLeaf=True:MaxDepth=50
 20141217
  MVA_METHOD BDT NTrees=400:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:AdaBoostBeta=1.0:UseYesNoLeaf=True:MaxDepth=50:PruneMethod=CostComplexity:PruneStrength=50
+ V8
+ MVA_METHOD BDT NTrees=200:BoostType=Bagging:SeparationType=GiniIndex:DoBoostMonitor=True:UseNvars=3:UsePoissonNvars:UseRandomisedTrees:BaggedSampleFraction=1.0:UseBaggedBoost:MaxDepth=50:nEventsMin=10 
 
  MVA_METHOD BOXCUTS FitMethod=GA:PopSize=3000
 
