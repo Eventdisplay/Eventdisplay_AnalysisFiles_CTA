@@ -140,48 +140,42 @@ Quality cuts applied before stereo reconstruction
 !! note that any changes here must be propagated below into the subarrays !!
 
 * -1 RECMETHOD 4
+* -1 MINANGLE 20.
 
 LST settings
-* -387 MINANGLE 10.
 * -387 NTUBES    4    10000
 * -387 LOSS1      -1.  0.1  0  10
 * -387 LOSS2      -1.  0.2  10 10000
 * -387 SIZE      0  1.e10
  
 MST settings
-* 10408618 MINANGLE 15.
 * 10408618 NTUBES    4    10000
 * 10408618 LOSS1      -1.  0.10  0  10
 * 10408618 LOSS2      -1.  0.20  10 10000
 * 10408618 SIZE      0  1.e10
 
-* 10408418 MINANGLE 15.
 * 10408418 NTUBES    4    10000
 * 10408418 LOSS1      -1.  0.10  0  10
 * 10408418 LOSS2      -1.  0.20  10 10000
 * 10408418 SIZE      0  1.e10
 
 DC-SST settings
-* 909924 MINANGLE 20.
 * 909924 NTUBES    5    10000
 * 909924 LOSS1      -1.  0.25  0  10
 * 909924 LOSS2      -1.  0.35  10 10000
 * 909924 SIZE      0  1.e10
 
 ASTRI settings
-* 201511619 MINANGLE 20.
 * 201511619 NTUBES    6    10000
 * 201511619 LOSS1      -1.  0.25  0  10
 * 201511619 LOSS2      -1.  0.35  10 10000
 * 201511619 SIZE      0  1.e10
 SC-SST settings
-* 201309316 MINANGLE 20.
 * 201309316 NTUBES    6    10000
 * 201309316 LOSS1      -1.  0.25  0  10
 * 201309316 LOSS2      -1.  0.35  10 10000
 * 201309316 SIZE      0  1.e10
 SC-SST settings
-* 201309415 MINANGLE 20.
 * 201309415 NTUBES    6    10000
 * 201309415 LOSS1      -1.  0.25  0  10
 * 201309415 LOSS2      -1.  0.35  10 10000
@@ -192,6 +186,7 @@ LST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
+* -1 MINANGLE 20.
 
 Switch everything off but LSTs
 * 10408618 USEIMAGE 0
@@ -202,7 +197,6 @@ Switch everything off but LSTs
 * 909924 USEIMAGE 0
 
 LST settings
-* -387 MINANGLE 10.
 * -387 NTUBES    4    10000
 * -387 LOSS1      -1.  0.1  0  10
 * -387 LOSS2      -1.  0.2  10 10000
@@ -213,6 +207,7 @@ MST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
+* -1 MINANGLE 20.
 
 Switch everything off but MSTs
 * -387 USEIMAGE 0
@@ -224,13 +219,11 @@ Switch everything off but MSTs
 * 909924 USEIMAGE 0
 
 MST settings
-* 10408618 MINANGLE 15.
 * 10408618 NTUBES    4    10000
 * 10408618 LOSS1      -1.  0.10  0  10
 * 10408618 LOSS2      -1.  0.20  10 10000
 * 10408618 SIZE      0  1.e10
 
-* 10408418 MINANGLE 15.
 * 10408418 NTUBES    4    10000
 * 10408418 LOSS1      -1.  0.10  0  10
 * 10408418 LOSS2      -1.  0.20  10 10000
@@ -241,6 +234,7 @@ SST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
+* -1 MINANGLE 20.
 
 Switch everything off but SSTs
 * -387 USEIMAGE 0
@@ -252,26 +246,22 @@ Switch everything off but SSTs
 * 909924 USEIMAGE 1
 
 DC-SST settings
-* 909924 MINANGLE 20.
 * 909924 NTUBES    5    10000
 * 909924 LOSS1      -1.  0.25  0  10
 * 909924 LOSS2      -1.  0.35  10 10000
 * 909924 SIZE      0  1.e10
 
 ASTRI settings
-* 201511619 MINANGLE 20.
 * 201511619 NTUBES    6    10000
 * 201511619 LOSS1      -1.  0.25  0  10
 * 201511619 LOSS2      -1.  0.35  10 10000
 * 201511619 SIZE      0  1.e10
 SC-SST settings
-* 201309316 MINANGLE 20.
 * 201309316 NTUBES    6    10000
 * 201309316 LOSS1      -1.  0.25  0  10
 * 201309316 LOSS2      -1.  0.35  10 10000
 * 201309316 SIZE      0  1.e10
 SC-SST settings
-* 201309415 MINANGLE 20.
 * 201309415 NTUBES    6    10000
 * 201309415 LOSS1      -1.  0.25  0  10
 * 201309415 LOSS2      -1.  0.35  10 10000
@@ -282,6 +272,7 @@ MST+SST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
+* -1 MINANGLE 20.
 
 Switch LST off
 * -387 USEIMAGE 0
@@ -293,39 +284,33 @@ Switch LST off
 * 909924 USEIMAGE 1
 
 MST settings
-* 10408618 MINANGLE 15.
 * 10408618 NTUBES    4    10000
 * 10408618 LOSS1      -1.  0.10  0  10
 * 10408618 LOSS2      -1.  0.20  10 10000
 * 10408618 SIZE      0  1.e10
 
-* 10408418 MINANGLE 15.
 * 10408418 NTUBES    4    10000
 * 10408418 LOSS1      -1.  0.10  0  10
 * 10408418 LOSS2      -1.  0.20  10 10000
 * 10408418 SIZE      0  1.e10
 
 DC-SST settings
-* 909924 MINANGLE 20.
 * 909924 NTUBES    5    10000
 * 909924 LOSS1      -1.  0.25  0  10
 * 909924 LOSS2      -1.  0.35  10 10000
 * 909924 SIZE      0  1.e10
 
 ASTRI settings
-* 201511619 MINANGLE 20.
 * 201511619 NTUBES    6    10000
 * 201511619 LOSS1      -1.  0.25  0  10
 * 201511619 LOSS2      -1.  0.35  10 10000
 * 201511619 SIZE      0  1.e10
 SC-SST settings
-* 201309316 MINANGLE 20.
 * 201309316 NTUBES    6    10000
 * 201309316 LOSS1      -1.  0.25  0  10
 * 201309316 LOSS2      -1.  0.35  10 10000
 * 201309316 SIZE      0  1.e10
 SC-SST settings
-* 201309415 MINANGLE 20.
 * 201309415 NTUBES    6    10000
 * 201309415 LOSS1      -1.  0.25  0  10
 * 201309415 LOSS2      -1.  0.35  10 10000
@@ -335,6 +320,9 @@ SC-SST settings
 LST+MST array only
 ---------------------------------------------------------------------------------------------
 
+* -1 RECMETHOD 4
+* -1 MINANGLE 20.
+
 Switch SSTs off
 * 201511619 USEIMAGE 0
 * 201309316 USEIMAGE 0
@@ -342,22 +330,18 @@ Switch SSTs off
 * 909924 USEIMAGE 0
 
 LST settings
-* -387 MINANGLE 10.
 * -387 NTUBES    4    10000
 * -387 LOSS1      -1.  0.1  0  10
 * -387 LOSS2      -1.  0.2  10 10000
 * -387 SIZE      0  1.e10
 
 MST settings
-* 10408618 MINANGLE 15.
 * 10408618 NTUBES    4    10000
 * 10408618 LOSS1      -1.  0.10  0  10
 * 10408618 LOSS2      -1.  0.20  10 10000
 * 10408618 SIZE      0  1.e10
 
-* 10408418 MINANGLE 15.
 * 10408418 NTUBES    4    10000
 * 10408418 LOSS1      -1.  0.10  0  10
 * 10408418 LOSS2      -1.  0.20  10 10000
 * 10408418 SIZE      0  1.e10
-
