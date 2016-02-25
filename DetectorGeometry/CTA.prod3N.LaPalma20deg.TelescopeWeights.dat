@@ -1,7 +1,12 @@
 Telescope type dependent weights for stereo reconstruction
 La Palma 20 deg (HD production Jan 2016)
+
+Determined from gain / size distribution matching
+
 LST
-* 138704810 0.25
+* 138704810 0.2
 MST FlashCam
 * 10408618  1.
 MST NectarCam
+SST GCT
+* 201309316 0.8
