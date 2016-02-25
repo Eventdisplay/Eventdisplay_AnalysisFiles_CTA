@@ -1,0 +1,13 @@
+Telescope type dependent weights for stereo reconstruction
+Paranal 40 deg FlashCam (grid production 2016)
+
+Determined from gain / size distribution matching
+
+LST
+* 138704810 0.5
+MST NectarCam
+* 10408418 1.
+SST GCT
+* 201309316 2.0
+SST DC-1m
+* 909924 2.0

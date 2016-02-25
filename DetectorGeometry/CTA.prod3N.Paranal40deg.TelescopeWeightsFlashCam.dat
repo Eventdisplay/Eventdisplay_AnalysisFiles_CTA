@@ -1,5 +1,5 @@
 Telescope type dependent weights for stereo reconstruction
-La Palma 20 deg (HD production Jan 2016)
+Paranal 40 deg FlashCam (grid production 2016)
 
 Determined from gain / size distribution matching
 
@@ -8,4 +8,6 @@ LST
 MST FlashCam
 * 10408618  1.
 SST GCT
-* 201309316 0.8
+* 201309316 0.75
+SST DC-1m
+* 909924 0.75
