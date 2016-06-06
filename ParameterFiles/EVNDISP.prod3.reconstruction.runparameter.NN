@@ -40,7 +40,9 @@ no trace integration for ASTRI
 * 201511619 FADCANALYSIS 0
 double pass for SC-SSTs
 * 201309316 FADCANALYSIS 2
-* 909924    FADCANALYSIS 2
+DC1m digital filtering analysis
+(pole zero value derived from pulse_SST1M_AfterPreamp.dat)
+* 909924    FADCANALYSIS 2 1 4 0.75
 
  double pass method 
     Par1: <doublepass (on=1, off=0)>
@@ -78,7 +80,7 @@ FlashCam: restrict search window
 * 10408418  FADCSUMMATIONSTART 0  0 TAVERAGE -4
 * 201511619 FADCSUMMATIONSTART 0  0 TAVERAGE -4
 * 201309316 FADCSUMMATIONSTART 0  0 TAVERAGE -4
-* 909924    FADCSUMMATIONSTART 0  0 TAVERAGE -4
+* 909924    FADCSUMMATIONSTART 10  0 TAVERAGE -4 190
 
 
  image cleaning <method=TWOLEVELCLEANING/TIMECLUSTERCLEANING/TIMETWOLEVEL/CLUSTERCLEANING> <FIXED/VARIABLE>
@@ -136,7 +138,7 @@ Quality cuts applied before stereo reconstruction
 !! note that any changes here must be propagated below into the subarrays !!
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 20.
+* -1 MINANGLE 5.
 
 LST settings
 * -387 NTUBES    4    10000
@@ -177,7 +179,7 @@ LST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 20.
+* -1 MINANGLE 5.
 
 Switch everything off but LSTs
 * 10408618 USEIMAGE 0
@@ -197,7 +199,7 @@ MST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 20.
+* -1 MINANGLE 5.
 
 Switch everything off but MSTs
 * -387 USEIMAGE 0
@@ -223,7 +225,7 @@ SST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 20.
+* -1 MINANGLE 5.
 
 Switch everything off but SSTs
 * -387 USEIMAGE 0
@@ -255,7 +257,7 @@ MST+SST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 20.
+* -1 MINANGLE 5.
 
 Switch LST off
 * -387 USEIMAGE 0
@@ -298,7 +300,7 @@ LST+MST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 20.
+* -1 MINANGLE 5.
 
 Switch SSTs off
 * 201511619 USEIMAGE 0
