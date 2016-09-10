@@ -1,0 +1,16 @@
+Telescope type dependent weights for stereo reconstruction
+Paranal FlashCam (grid prod3b production 2016)
+
+Determined from gain / size distribution matching
+
+LST
+* 138704810 0.2
+MST FlashCam
+* 10408618  1.
+SST GCT
+* 201309316 0.75
+SST DC-1m
+* 909924 0.85
+ASTRI
+* 201511619 0.35
+
