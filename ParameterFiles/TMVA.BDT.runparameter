@@ -21,6 +21,8 @@ DEFAULT (updated from MaxDepth=3, 2015-11-19)
  MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:nEventsMin=100:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=50
  V5 (Dan, new default)
 * MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=100:nEventsMin=30:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=500
+ V5 (Dan, new default; removed nEventsMin cut)
+ MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=100:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=500
  V6/V7
  MVA_METHOD BDT NTrees=200:BoostType=Bagging:SeparationType=GiniIndex:DoBoostMonitor=True:UseNvars=4.5:UsePoissonNvars:UseRandomisedTrees:BaggedSampleFraction=1.0:UseBaggedBoost
 20141202
@@ -52,6 +54,7 @@ cut categories:  NotEnforced, FMax, FMin, FSmart
 * VARIABLE F -1 -1 NotEnforced log10(SizeSecondMax)
 * VARIABLE I 2 -1 NotEnforced NImages_Ttype
 * VARIABLE F -1 -1 NotEnforced ENERGYDEVARIABLE
+* VARIABLE F -10. 2. NotEnforced log10(DispDiff)
 
 ##############################################
 spectator variables
