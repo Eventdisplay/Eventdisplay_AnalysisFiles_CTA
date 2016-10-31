@@ -60,6 +60,8 @@ estimated per individual telescope
 * arrayechi2 0. 0.5
 cut on energy of reconstruction shower (on linear energy scale, in [TeV])
 * arrayerec 0. 1.e99
+cut on multiplicity ratio
+* arrayemultiplicityratio 0.7
 
 emission height
 * arrayemission 0. 1.e99
