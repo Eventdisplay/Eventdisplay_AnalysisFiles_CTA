@@ -14,13 +14,13 @@ optimization method (MC or GA)
  MVA_METHOD BDT
 DEFAULT (updated from MaxDepth=3, 2015-11-19)
  V2
- MVA_METHOD BDT NTrees=400:MaxDepth=5
+* MVA_METHOD BDT NTrees=400:MaxDepth=5
  V4
  MVA_METHOD BDT NTrees=400:MaxDepth=10
  V3
  MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=20:nEventsMin=100:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=50
  V5 (Dan, new default)
-* MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=100:nEventsMin=30:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=500
+ MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=100:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=500
  V5 (Dan, new default; removed nEventsMin cut)
  MVA_METHOD BDT NTrees=200:BoostType=AdaBoost:SeparationType=GiniIndex:nCuts=100:AdaBoostBeta=1.0:UseYesNoLeaf=True:PruneMethod=CostComplexity:PruneStrength=-1:MaxDepth=500
  V6/V7
@@ -52,7 +52,6 @@ cut categories:  NotEnforced, FMax, FMin, FSmart
 * VARIABLE F 0.0 100. FMax EmissionHeight
 * VARIABLE F -1 -1 NotEnforced log10(EmissionHeightChi2)
 * VARIABLE F -1 -1 NotEnforced log10(SizeSecondMax)
-* VARIABLE I 2 -1 NotEnforced NImages_Ttype
 * VARIABLE F -1 -1 NotEnforced ENERGYDEVARIABLE
 * VARIABLE F -10. 2. NotEnforced log10(DispDiff)
 
@@ -86,7 +85,7 @@ MINEVENTS <signal events> <background events>
 Selection cut before training
 (similar to TTree::Draw() selection cuts)
 
-* SELECTION_CUTS MSCW>-2.&&MSCW<2.&&MSCL>-2.&&MSCL<5.&&ENERGYCHI2VARIABLE>=0.&&ENERGYVARIABLE>0.&&EmissionHeight>0.&&EmissionHeight<50.&&NImages>=MINIMAGES&&ENERGYDEVARIABLE>=0.&&MINIMAGETYPECUT
+* SELECTION_CUTS MSCW>-2.&&MSCW<2.&&MSCL>-2.&&MSCL<5.&&ENERGYCHI2VARIABLE>=0.&&ENERGYVARIABLE>0.&&sqrt(Xoff*Xoff+Yoff*Yoff)<100.&&EmissionHeight>0.&&EmissionHeight<50.&&NImages>=MINIMAGES&&ENERGYDEVARIABLE>=0.&&MINIMAGETYPECUT
 
 ##############################################
 Prepare training options

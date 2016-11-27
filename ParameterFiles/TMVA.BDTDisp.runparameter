@@ -1,0 +1,1 @@
+NTrees=2000:BoostType=Grad:Shrinkage=0.1:UseBaggedBoost:GradBaggingFraction=0.5:nCuts=20:MaxDepth=10:PruneMethod=ExpectedError
