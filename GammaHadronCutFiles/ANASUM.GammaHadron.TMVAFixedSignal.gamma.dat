@@ -31,18 +31,14 @@ replaced by parent script
 
 * arrayntel MINIMAGES 10000
 
- teltypegroup NTELTYPE0 0
- teltypegroup NTELTYPE1 1
- teltypegroup NTELTYPE2 2
-
 MSTs
-* nimages_teltype NTELTYPE0 10408418 10408618
+* nimages_teltype NTELTYPEMST 10408418 10408618
 LSTs
-* nimages_teltype NTELTYPE1 138704810
+* nimages_teltype NTELTYPELST 138704810
 SSTs
-* nimages_teltype NTELTYPE2 201509515 201309316 201511619 909924
- nimages_teltype 2 201509515 201309316 201511619 909924
- nimages_teltype 2 10408418 138704810 10408618
+* nimages_teltype NTELTYPESST 201509515 201309316 201511619 909924
+SCMST
+* nimages_teltype NTELTYPESCMST 207308707
 
 ii) direction cut [deg2]
 * angres 68
