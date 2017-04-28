@@ -1,0 +1,21 @@
+Effective focal lengths to be used in image reconstruction
+
+Values calculated by KB
+(flen.pdf)
+
+Telescope types according to prod3b
+
+LST
+* 138704810 0.0466
+MST (FlashCam - but camera does not matter)
+* 10408618 0.0278
+MST (NectarCam - but camera does not matter)
+* 10408418 0.0278
+ASTRI SST
+* 201511619 0.
+GC-SST
+* 201309316 0.0114
+SST-1m
+* 909924 0.0173
+SC-MST
+* 207308707 0.
