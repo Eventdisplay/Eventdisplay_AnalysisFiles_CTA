@@ -52,6 +52,7 @@ cut categories:  NotEnforced, FMax, FMin, FSmart
 * VARIABLE F 0.0 100. FMax EmissionHeight
 * VARIABLE F -1 -1 NotEnforced log10(EmissionHeightChi2)
 * VARIABLE F -1 -1 NotEnforced log10(SizeSecondMax)
+* VARIABLE I 2 -1 NotEnforced NImages_Ttype
 * VARIABLE F -1 -1 NotEnforced ENERGYDEVARIABLE
 * VARIABLE F -10. 2. NotEnforced log10(DispDiff)
 
