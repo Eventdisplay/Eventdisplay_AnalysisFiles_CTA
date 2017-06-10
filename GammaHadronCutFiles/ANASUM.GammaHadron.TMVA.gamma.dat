@@ -19,7 +19,8 @@ successfull core and direction reconstruction (>=0.)
 distance of core position to telescopes [m]
 * arraycore -1. 1.e99 2
 (default value is 250)
-* telcoredistance 1.e99
+ telcoredistance 1.e99
+* telcoredistance MAXCOREDISTANCE
 size of the camera [deg], all events with direction
 outside that intervall are ignored
 * cameraedge -1. 1.e99
