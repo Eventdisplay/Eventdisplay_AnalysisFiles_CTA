@@ -210,7 +210,7 @@ Quality cuts applied before stereo reconstruction
 !! note that any changes here must be propagated below into the subarrays !!
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 15.
+* -1 MINANGLE 5.
 
 LST settings
 * -387 NTUBES    4    10000
@@ -257,7 +257,7 @@ LST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 15.
+* -1 MINANGLE 5.
 
 Switch everything off but LSTs
 * 10408618 USEIMAGE 0
@@ -277,7 +277,7 @@ MST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 15.
+* -1 MINANGLE 5.
 
 Switch everything off but MSTs
 * -387 USEIMAGE 0
@@ -303,7 +303,7 @@ SST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 15.
+* -1 MINANGLE 5.
 
 Switch everything off but SSTs
 * -387 USEIMAGE 0
@@ -340,7 +340,7 @@ MST+SST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 15.
+* -1 MINANGLE 5.
 
 Switch LST off
 * -387 USEIMAGE 0
@@ -388,7 +388,7 @@ LST+MST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 15.
+* -1 MINANGLE 5.
 
 Switch SSTs off
 * 201511619 USEIMAGE 0
