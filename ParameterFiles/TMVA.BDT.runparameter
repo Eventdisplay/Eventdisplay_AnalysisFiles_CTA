@@ -58,21 +58,21 @@ cut categories:  NotEnforced, FMax, FMin, FSmart
 
 ##############################################
 spectator variables
-* SPECTATOR runNumber
-* SPECTATOR eventNumber
-* SPECTATOR MCze
-* SPECTATOR MCaz
-* SPECTATOR MCxoff
-* SPECTATOR MCyoff
-* SPECTATOR MCxcore
-* SPECTATOR MCycore
+ SPECTATOR runNumber
+ SPECTATOR eventNumber
+ SPECTATOR MCze
+ SPECTATOR MCaz
+ SPECTATOR MCxoff
+ SPECTATOR MCyoff
+ SPECTATOR MCxcore
+ SPECTATOR MCycore
 * SPECTATOR MCe0
-* SPECTATOR NImages
-* SPECTATOR Xoff
-* SPECTATOR Yoff
-* SPECTATOR Xcore
-* SPECTATOR Ycore
-* SPECTATOR ENERGYVARIABLE
+ SPECTATOR NImages
+ SPECTATOR Xoff
+ SPECTATOR Yoff
+ SPECTATOR Xcore
+ SPECTATOR Ycore
+ SPECTATOR ENERGYVARIABLE
 
 
 ##############################################
