@@ -59,7 +59,8 @@ no trace integration for ASTRI
 * 201411019 FADCANALYSIS 2
 DC1m digital filtering analysis
 (pole zero value derived from pulse_SST1M_AfterPreamp.dat)
-* 910224    FADCANALYSIS 2 1 4 0.75
+ 910224    FADCANALYSIS 2 1 4 0.75
+* 910224    FADCANALYSIS 2
 * 207308707 FADCANALYSIS 2
 
  double pass method 
@@ -76,7 +77,7 @@ DC1m digital filtering analysis
 * 201409917 FADCDOUBLEPASS 0 6 2 0
 * 201310418 FADCDOUBLEPASS 0 10 2 0
 * 201411019 FADCDOUBLEPASS 0 6 2 0
-* 910224    FADCDOUBLEPASS 0 4 2 0
+* 910224    FADCDOUBLEPASS 0 3 2 0
 * 207308707 FADCDOUBLEPASS 0 6 2 0
 
  trace integration window <window 1> <window 2>
@@ -89,7 +90,7 @@ DC1m digital filtering analysis
 * 201409917 FADCSUMMATIONWINDOW 6 6
 * 201310418 FADCSUMMATIONWINDOW 6 6
 * 201411019 FADCSUMMATIONWINDOW 6 6
-* 910224    FADCSUMMATIONWINDOW 4 4
+* 910224    FADCSUMMATIONWINDOW 3 3
 * 207308707 FADCSUMMATIONWINDOW 6 6
 
 # The case of ASTRI above is a bit different, since there is no trace and the time bins are of 2ns.
