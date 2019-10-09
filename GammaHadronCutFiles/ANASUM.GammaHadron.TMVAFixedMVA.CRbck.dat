@@ -32,7 +32,7 @@ replaced by parent script
 * arrayntel MINIMAGES 10000
 
 MSTs
-* nimages_teltype NTELTYPEMST 10408418 10408618
+* nimages_teltype NTELTYPEMST 10408418 10408618 207308707
 LSTs
 * nimages_teltype NTELTYPELST 138704810
 SSTs
@@ -71,3 +71,4 @@ v)  TMVA cuts
 * TMVA_MVACut 6  0.125
 * TMVA_MVACut 7  0.100
 * TMVA_MVACut 8  0.075
+* dirdiff DDIRDIFF
