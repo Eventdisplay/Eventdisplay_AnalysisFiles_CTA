@@ -102,6 +102,14 @@ trace integration and image cleaning parameter
 * -015 IMAGECLEANINGMETHOD CLUSTERCLEANING VARIABLE
 * -015 IMAGECLEANINGTHRESHOLDS 7. 6.0
 * -015 CLUSTERCLEANINGPARAMETERS -1 0 2
+pixel shape definition (important for edge pixel finder)
+* -387      SQUAREPIXELS FALSE
+* 10408618  SQUAREPIXELS FALSE
+* 10408418  SQUAREPIXELS FALSE
+* 201511619 SQUAREPIXELS TRUE
+* 201309316 SQUAREPIXELS TRUE
+* 909924    SQUAREPIXELS FALSE
+* 207308707 SQUAREPIXELS TRUE
 
  image calculation at the edge of the camera
   <start fit for image with at least this loss> <min number of tubes>
