@@ -187,6 +187,15 @@ SC-MSTs
 * 207308707 IMAGECLEANING_SAMPLETIMESLICE 1
 * 207308707 IMAGECLEANING_NBINSADC 50
 
+pixel shape definition (important for edge pixel finder)
+* -387      SQUAREPIXELS FALSE
+* 10408618  SQUAREPIXELS FALSE
+* 10408418  SQUAREPIXELS FALSE
+* 201511619 SQUAREPIXELS TRUE
+* 201309316 SQUAREPIXELS TRUE
+* 909924    SQUAREPIXELS FALSE
+* 207308707 SQUAREPIXELS TRUE
+
  image calculation at the edge of the camera
   <start fit for image with at least this loss> <min number of tubes>
 * -387      LLEDGEFIT 1.0 5
