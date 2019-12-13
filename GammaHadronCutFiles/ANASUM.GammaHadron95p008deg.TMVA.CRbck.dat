@@ -65,8 +65,8 @@ emission height
 
 v)  TMVA cuts
 TMVACUTS <MVA Method> <file index min> <file index max> <weight file (without energy bin index and suffix)>
- TMVAPARAMETER BDT 0 7 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
-* TMVAPARAMETER noepoch BDT 0 8 0 0 0.2 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT
+ TMVAPARAMETER BDT 0 0 8 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
+* TMVAPARAMETER noepoch BDT 0 0 8 0 0 0.2 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT
 TMVACUTS <min significance> <min number of signal events> <observation time (h)> <file with particle rates before cuts>
  <maximum signal efficiency> <minimum theta2 cut>
  TMVACUTS 5. 10. OBSERVINGTIME_H PARTICLENUMBERFILE 0.8 0.00001
