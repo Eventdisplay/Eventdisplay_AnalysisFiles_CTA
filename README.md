@@ -23,3 +23,10 @@ AstroData/TeV_data
 DetectorGeometry
 - array layout files (to be used to select arrays from prodX hyper arrays)
 
+## Licence
+
+License: BSD-3 (see LICENCE file)
+
+## Contact
+
+Gernot Maier
