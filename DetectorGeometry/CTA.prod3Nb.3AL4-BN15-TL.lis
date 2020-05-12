@@ -1,5 +1,5 @@
 #####################################################################
-# CTA North Threshold Layout
+# CTA North Threshold Layout (option TL)
 # Prod3b North
 # 4 LSTs and 5 MSTs
 #
@@ -19,5 +19,5 @@
 58    20    12    1  M-01
 59    20    12    1  M-02
 60    20    12    1  M-03
-65    20    12    1  M-08
-75    20    12    1  M-13
+63    20    12    1  M-06
+72    20    12    1  M-15
