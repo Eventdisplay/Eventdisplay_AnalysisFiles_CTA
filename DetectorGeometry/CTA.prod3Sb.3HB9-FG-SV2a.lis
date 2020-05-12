@@ -1,0 +1,27 @@
+#####################################################################
+# CTA South Layout Science Verification SV2a
+# Prod3b South
+# 0 LSTs, 2 MSTs, 10 SSTs
+#
+# FlashCam MSTs
+# GCT SSTs
+#
+# Column 1: prod3b telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for no-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope number
+#
+#####################################################################
+30   20.   12   1   M-03   
+24   20.   12   1   M-09   
+269   20.   12   1   S-06   
+275   20.   12   1   S-08   
+285   20.   12   1   S-10   
+291   20.   12   1   S-12   
+293   20.   12   1   S-14   
+317   20.   12   1   S-20   
+325   20.   12   1   S-26   
+328   20.   12   1   S-28   
+343   20.   12   1   S-32   
+349   20.   12   1   S-34   
