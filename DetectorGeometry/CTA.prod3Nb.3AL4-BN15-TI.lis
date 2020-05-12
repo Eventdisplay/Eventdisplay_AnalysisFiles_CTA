@@ -1,9 +1,23 @@
-5    20    12    1
-6    20    12    1
-7    20    12    1
-8    20    12    1
-58    20    12    1
-59    20    12    1
-60    20    12    1
-65    20    12    1
-75    20    12    1
+#####################################################################
+# CTA North Threshold Layout
+# Prod3b North
+# 4 LSTs and 15 MSTs
+#
+# NectarCam MSTs
+#
+# Column 1: prod3b telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for no-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope number
+#
+#####################################################################
+5     20    12    1  L-01
+6     20    12    1  L-02
+7     20    12    1  L-03
+8     20    12    1  L-04
+58    20    12    1  M-01
+59    20    12    1  M-02
+60    20    12    1  M-03
+65    20    12    1  M-08
+75    20    12    1  M-13
