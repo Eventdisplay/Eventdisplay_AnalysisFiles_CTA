@@ -1,0 +1,18 @@
+List of telescope types for CTA Prod4
+(all lines without a '*' in the first column are ignored)
+
+Should be read dynamically from the different submission scripts
+
+910224     SST-1M
+201309316  SST-GCT (CHEC on GCT)
+201310418  SST-GCT-7MM (CHEC-7mm on GCT)
+201511619  SST-ASTRI (ASTRICam on ASTRI)
+201409917  SST-ASTRI+CHEC
+201411019  SST-ASTRI+CHEC-7mm
+
+* LST 0
+* MST 10408618 10408418
+* SST 910224 201309316 201310418 201511619 201409917 201411019
+* SCMST 0
+For convenience: a list of all telescope types
+* TEL 910224 201309316 201310418 201511619 201409917 201411019 10408618 10408418
