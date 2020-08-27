@@ -1,0 +1,16 @@
+List of telescope types for CTA Prod5
+(all lines without a '*' in the first column are ignored)
+
+Should be read dynamically from the different submission scripts
+
+138704810:  LST (short version: -387 )
+10408618:   FlashCam MST
+10608418:   NectarCam MST
+201409917:  SST
+
+* LST 138704810
+* MST 10408618 10608418
+* SST 201409917
+ SCMST 0
+For convenience: a list of all telescope types
+* XST 138704810 10408618 10608418 201409917
