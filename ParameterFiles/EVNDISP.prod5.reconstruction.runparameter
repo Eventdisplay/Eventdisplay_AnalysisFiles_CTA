@@ -54,7 +54,7 @@ FlashCam digitial filtering analysis
  (TODO: check trace integration window for different readouts)
 * -387      FADCSUMMATIONWINDOW 4 4
 * 10408618  FADCSUMMATIONWINDOW 4 4
-* 10608418  FADCSUMMATIONWINDOW 8 8
+* 10608418  FADCSUMMATIONWINDOW 4 4
 * 201409917 FADCSUMMATIONWINDOW 6 6
 
 
