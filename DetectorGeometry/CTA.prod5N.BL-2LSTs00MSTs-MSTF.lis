@@ -1,0 +1,14 @@
+#####################################################################
+# CTA North Hyperarray Layout
+# Prod5 North
+# 2 LSTs and 0 MSTs (FlashCam type)
+#
+# Column 1: prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+1     20    12    1   L-01
+2     20    12    1   L-02
