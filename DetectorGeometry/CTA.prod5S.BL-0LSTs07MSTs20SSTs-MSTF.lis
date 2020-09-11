@@ -1,7 +1,7 @@
 #####################################################################
 # CTA South 
 # Prod5 
-# 0 LSTs and 07 MSTs (FlashCam type), 40 SSTs
+# 0 LSTs and 07 MSTs (FlashCam type), 20 SSTs
 #
 # Column 1: prod5 telescope number
 # Column 2: FOV (deg)
