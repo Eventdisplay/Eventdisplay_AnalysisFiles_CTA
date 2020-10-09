@@ -1,7 +1,7 @@
 #####################################################################
-# CTA South 
-# Prod5 
-# 0 LSTs and 7 MSTs (FlashCam type)
+# CTA North TA Layout Candidate
+# Prod5 North
+# 0 LSTs and 5 MSTs (FlashCam type)
 #
 # Column 1: prod5 telescope number
 # Column 2: FOV (deg)
@@ -10,8 +10,8 @@
 # Column 5: CTAO telescope name
 #
 #####################################################################
-6    20.   12   1   M-02
-7    20.   12   1   M-03
-13    20.   12   1  M-09
-16    20.   12   1  M-12
-17    20.   12   1  M-13
+22     20    12    1   M-03
+23     20    12    1   M-04
+24     20    12    1   M-05
+48     20    12    1   M-100
+34     20    12    1   M-15

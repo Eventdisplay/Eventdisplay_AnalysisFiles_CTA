@@ -1,0 +1,16 @@
+#####################################################################
+# CTA North Hyperarray Layout
+# Prod5 North
+# 4 MSTs (VTS study)
+#
+# Column 1: prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+11     3.5    12    1  M-07
+18     3.5    12    1  M-14
+41     3.5    12    1  M-0151
+42     3.5    12    1  M-140
