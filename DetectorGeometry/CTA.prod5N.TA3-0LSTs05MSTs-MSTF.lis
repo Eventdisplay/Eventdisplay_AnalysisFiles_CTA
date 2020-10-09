@@ -1,0 +1,17 @@
+#####################################################################
+# CTA North TA Layout Candidate
+# Prod5 North
+# 0 LSTs and 5 MSTs (FlashCam type)
+#
+# Column 1: prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+22     20    12    1   M-03
+23     20    12    1   M-04
+24     20    12    1   M-05
+48     20    12    1   M-100
+34     20    12    1   M-15
