@@ -1,0 +1,19 @@
+#####################################################################
+# CTA North SV Layout
+# Prod5 North
+# 2 LSTs and 3 MSTs
+#
+# NectarCam MSTs
+#
+# Column 1: Prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for no-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope number
+#
+#####################################################################
+1     20    12    1   L-01
+2     20    12    1   L-02
+6     20    12    1   M-02
+7     20    12    1   M-03
+12     20    12    1   M-08
