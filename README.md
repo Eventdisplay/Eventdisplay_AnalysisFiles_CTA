@@ -1,5 +1,7 @@
 # Eventdisplay Analysis Files for CTA
 
+[![DOI](https://zenodo.org/badge/220769681.svg)](https://zenodo.org/badge/latestdoi/220769681)
+
 Configuration and runparameter files for Eventdisplay
 
 Required for the analysis of CTA Monte Carlo events. 
