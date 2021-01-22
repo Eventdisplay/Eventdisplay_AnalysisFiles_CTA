@@ -1,0 +1,21 @@
+#####################################################################
+# CTA South 9-MST layout
+# Prod5
+# 56 MSTs, 9 SSTs
+#
+# Column 1: prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+51    20.   12   1  S-22
+58    20.   12   1  S-29
+71    20.   12   1  S-42
+75    20.   12   1  S-46
+86    20.   12   1  S-57
+150    20.   12   1  S-84
+154    20.   12   1  S-88
+156    20.   12   1  S-90
+168    20.   12   1  S-102
