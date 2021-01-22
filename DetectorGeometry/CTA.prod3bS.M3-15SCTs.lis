@@ -1,0 +1,27 @@
+#####################################################################
+# CTA South
+# Prod3b SCT
+# 15 SCTs
+#
+# Column 1: prod3b telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+1  20    12  1  MSCT-01
+3  20    12  1  MSCT-02
+2  20    12  1  MSCT-04
+12 20    12  1  MSCT-06
+4  20    12  1  MSCT-07
+5  20    12  1  MSCT-08
+13 20    12  1  MSCT-09
+15 20    12  1  MSCT-10
+6  20    12  1  MSCT-11
+7  20    12  1  MSCT-12
+16 20    12  1  MSCT-13
+20 20    12  1  MSCT-15
+14 20    12  1  MSCT-16
+21 20    12  1  MSCT-17
+17 20    12  1  MSCT-21
