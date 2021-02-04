@@ -43,7 +43,7 @@ SCMST
 
 ii) direction cut [deg2]
 * angres 68
-* theta2scaling 1. 0.05
+* theta2scaling 1. 0. 1.e10 1.
 
 iii) gamma hadron cuts:
 b) mean scaled width cut (use cut selector 0 in runlist)
