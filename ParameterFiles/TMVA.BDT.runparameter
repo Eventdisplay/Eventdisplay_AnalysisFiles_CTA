@@ -86,7 +86,9 @@ MINEVENTS <signal events> <background events>
 Selection cut before training
 (similar to TTree::Draw() selection cuts)
 
-* SELECTION_CUTS MSCW>-2.&&MSCW<2.&&MSCL>-2.&&MSCL<5.&&ENERGYCHI2VARIABLE>=0.&&ENERGYVARIABLE>0.&&sqrt(Xoff*Xoff+Yoff*Yoff)<100.&&EmissionHeight>0.&&EmissionHeight<50.&&NImages>=MINIMAGES&&ENERGYDEVARIABLE>=0.&&MINIMAGETYPECUT
+* SELECTION_CUTS MSCW>-2.&&MSCW<2.&&MSCL>-2.&&MSCL<5.&&ENERGYCHI2VARIABLE>=0.&&ENERGYVARIABLE>0.&&sqrt(Xoff*Xoff+Yoff*Yoff)<100.&&EmissionHeight>0.&&EmissionHeight<50.&&ENERGYDEVARIABLE>=0.
+ TELMULTIPLICITY_CUTS NImages>=MINIMAGES&&MINIMAGETYPECUT
+* TELMULTIPLICITY_CUTS MINIMAGETYPECUT
 
 ##############################################
 Prepare training options
