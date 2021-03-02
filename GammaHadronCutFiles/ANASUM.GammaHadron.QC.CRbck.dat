@@ -63,4 +63,3 @@ cut on energy of reconstruction shower (on linear energy scale, in [TeV])
 
 emission height
 * arrayemission 0. 1.e99
-* dirdiff DDIRDIFF
