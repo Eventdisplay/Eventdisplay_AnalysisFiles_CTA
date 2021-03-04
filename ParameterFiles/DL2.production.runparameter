@@ -1,0 +1,7 @@
+
+Incomplete runparameter file (simply to keep a record as an example)
+
+* SIMULATIONFILE_DATA /lustre/fs22/group/cta/users/maierg/analysis/AnalysisData/prod5-Paranal-20deg-sq08-LL/S-M5C3-13MSTs30SSTs-MSTF/Analysis-ID0-g20210921/gamma_onSource.S-M5C3-13MSTs30SSTs-MSTF_ID0_180deg-prod5-Paranal-20deg-sq08-LL-751.mscw.root
+* /lustre/fs22/group/cta/users/maierg/analysis/AnalysisData/prod5-Paranal-20deg-sq10-LL/S.BL-4LSTs25MSTs70SSTs-MSTF/archive/Analysis-ID0-g20210921-BDT/gamma_cone.S.BL-4LSTs25MSTs70SSTs-MSTF_ID0_180deg-prod5-Paranal-20deg-sq10-LL-9501.mscw.root
+
+* TMVAPARAMETER noepoch BDT 0 0 8 0 0 0.2 $CTA_USER_DATA_DIR/analysis/AnalysisData/prod5-Paranal-20deg-sq08-LL/S-M3C3-13MSTs35SSTs-MSTF/TMVA/BDT-V3-ID0-NIM3LST3MST3SST3SCMST3-g20201021-0.5/ BDT
