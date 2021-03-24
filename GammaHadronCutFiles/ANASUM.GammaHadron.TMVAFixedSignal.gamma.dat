@@ -64,9 +64,7 @@ cut on multiplicity ratio
 emission height
 * arrayemission 0. 1.e99
 
-
 v)  TMVA cuts
- TMVAPARAMETER BDT 0 0 8 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT_
-* TMVAPARAMETER noepoch BDT 0 0 8 0 0 0.2 $CTA_USER_DATA_DIR/analysis/AnalysisData/DATASET/SUBARRAY/TMVA/TMVACUTDIR-WOBBLEOFFSET/ BDT
+TMVACUTS <MVA Method> <file index min> <file index max> <weight file (without energy bin index and suffix)>
+* TMVAPARAMETER noepoch BDT 0 0 8 0 0 0.2 $TMPDIR/tmvaMCAZIMUTH BDT
 * TMVASignalEfficiency 9999 0.40
-* dirdiff DDIRDIFF
