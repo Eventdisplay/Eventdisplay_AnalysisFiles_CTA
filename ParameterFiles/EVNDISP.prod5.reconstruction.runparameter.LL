@@ -136,10 +136,10 @@ pixel shape definition (important for edge pixel finder)
 
  image calculation at the edge of the camera
   <start fit for image with at least this loss> <min number of tubes>
-* -387      LLEDGEFIT 1.0 5
-* 10408618  LLEDGEFIT -1.0 4
-* 10608418  LLEDGEFIT -1.0 4
-* 201409917 LLEDGEFIT -1.0 4
+* -387      LLEDGEFIT -1.0 5
+* 10408618  LLEDGEFIT -1.0 5
+* 10608418  LLEDGEFIT -1.0 5
+* 201409917 LLEDGEFIT -1.0 5
 
  change the default neighbour search by increasing the search area by this factor
 * -387       NEIGHBOURDISTANCEFACTOR 1.
