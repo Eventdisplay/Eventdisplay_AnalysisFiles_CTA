@@ -26,7 +26,6 @@ CTA Telescope types:
 10608418:   NectarCam MST
 201409917:  SST
 
-
 trace integration and image cleaning parameter
 --------------------------------------------------
 
@@ -52,11 +51,10 @@ FlashCam digitial filtering analysis
 
  trace integration window <window 1> <window 2>
  (TODO: check trace integration window for different readouts)
-* -387      FADCSUMMATIONWINDOW 4 4
+* -387      FADCSUMMATIONWINDOW 2 2
 * 10408618  FADCSUMMATIONWINDOW 4 4
 * 10608418  FADCSUMMATIONWINDOW 4 4
 * 201409917 FADCSUMMATIONWINDOW 6 6
-
 
  trace integration start 
  (for window 1 for integration method 1)
@@ -65,10 +63,11 @@ FlashCam digitial filtering analysis
     Par3: <timing method used for calculation of window start (FIXED/TZERO/TAVERAGE)>
     Par4: <max difference between T0 and trace integration start>
     Par5: <max trace sample for sliding window search (default: nsamples)>
-* -387      FADCSUMMATIONSTART 1 0 TAVERAGE -4
-* 10408618  FADCSUMMATIONSTART 10 0 TAVERAGE -4 95
-* 10608418  FADCSUMMATIONSTART 0  0 TAVERAGE -4
-* 201409917 FADCSUMMATIONSTART 0  0 TAVERAGE -4
+    Par6: <reverse search for low gain (default: 1)>
+* -387      FADCSUMMATIONSTART 1 0 TAVERAGE -4 -1 0
+* 10408618  FADCSUMMATIONSTART 10 0 TAVERAGE -4 95 0
+* 10608418  FADCSUMMATIONSTART 0  0 TAVERAGE -4 -1 0
+* 201409917 FADCSUMMATIONSTART 0  0 TAVERAGE -4 -1 0
 
 General image cleaning parameters for TIMENEXTNEIGHBOUR
 ---------------------------------------------------------------------------------------------------
@@ -135,9 +134,9 @@ pixel shape definition (important for edge pixel finder)
 
  image calculation at the edge of the camera
   <start fit for image with at least this loss> <min number of tubes>
-* -387      LLEDGEFIT 1.0 5
-* 10408618  LLEDGEFIT 0.1 5
-* 10608418  LLEDGEFIT 0.1 5
+* -387      LLEDGEFIT -1.0 5
+* 10408618  LLEDGEFIT -1.0 5
+* 10608418  LLEDGEFIT -1.0 5
 * 201409917 LLEDGEFIT -1.0 5
 
  change the default neighbour search by increasing the search area by this factor
@@ -151,7 +150,7 @@ Quality cuts applied before stereo reconstruction
 !! note that any changes here must be propagated below into the subarrays !!
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 5.
+* -1 MINANGLE 0.
 
 LST settings
 * -387 NTUBES    4    10000
@@ -172,129 +171,6 @@ MST settings
 
 SST settings
 * 201409917 NTUBES    5    10000
- 201409917 LOSS1      -1.  0.1  0  10
- 201409917 LOSS2      -1.  0.1  10 10000
-* 201409917 LOSS1      -1.  0.2  0  10
-* 201409917 LOSS2      -1.  0.3  10 10000
-
-
----------------------------------------------------------------------------------------------
-LST array only
----------------------------------------------------------------------------------------------
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 5.
-
-Switch everything off but LSTs
-* 10408618 USEIMAGE 0
-* 10608418 USEIMAGE 0
-* 201511619 USEIMAGE 0
-* 201309316 USEIMAGE 0
-* 201409917 USEIMAGE 0
-
-LST settings
-* -387 NTUBES    4    10000
-* -387 LOSS1      -1.  0.1  0  10
-* -387 LOSS2      -1.  0.2  10 10000
-* -387 SIZE      0  1.e10
-
----------------------------------------------------------------------------------------------
-MST array only
----------------------------------------------------------------------------------------------
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 5.
-
-Switch everything off but MSTs
-* -387 USEIMAGE 0
-* 10408618 USEIMAGE 1
-* 10608418 USEIMAGE 1
-* 201409917 USEIMAGE 0
-
-MST settings
-* 10408618 NTUBES    4    10000
-* 10408618 LOSS1      -1.  0.10  0  10
-* 10408618 LOSS2      -1.  0.20  10 10000
-* 10408618 SIZE      0  1.e10
-
-* 10608418 NTUBES    4    10000
-* 10608418 LOSS1      -1.  0.10  0  10
-* 10608418 LOSS2      -1.  0.20  10 10000
-* 10608418 SIZE      0  1.e10
-
----------------------------------------------------------------------------------------------
-SST array only
----------------------------------------------------------------------------------------------
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 5.
-
-Switch everything off but SSTs
-* -387 USEIMAGE 0
-* 10408618 USEIMAGE 0
-* 10608418 USEIMAGE 0
-* 201409917 USEIMAGE 1
-
-SST Settings
-* 201409917 NTUBES    6    10000
 * 201409917 LOSS1      -1.  0.1  0  10
-* 201409917 LOSS2      -1.  0.1  10 10000
-
----------------------------------------------------------------------------------------------
-MST+SST array only
----------------------------------------------------------------------------------------------
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 5.
-
-Switch LST off
-* -387 USEIMAGE 0
-* 10408618 USEIMAGE 1
-* 10608418 USEIMAGE 1
-* 201409917 USEIMAGE 1
-
-MST settings
-* 10408618 NTUBES    4    10000
-* 10408618 LOSS1      -1.  0.10  0  10
-* 10408618 LOSS2      -1.  0.20  10 10000
-* 10408618 SIZE      0  1.e10
-
-* 10608418 NTUBES    4    10000
-* 10608418 LOSS1      -1.  0.10  0  10
-* 10608418 LOSS2      -1.  0.20  10 10000
-* 10608418 SIZE      0  1.e10
-
-SST setting
-* 201409917 NTUBES    6    10000
-* 201409917 LOSS1      -1.  0.1  0  10
-* 201409917 LOSS2      -1.  0.1  10 10000
-
-
-
----------------------------------------------------------------------------------------------
-LST+MST array only
----------------------------------------------------------------------------------------------
-
-* -1 RECMETHOD 4
-* -1 MINANGLE 5.
-
-Switch SSTs off
-* 201409917 USEIMAGE 0
-
-LST settings
-* -387 NTUBES    4    10000
-* -387 LOSS1      -1.  0.1  0  10
-* -387 LOSS2      -1.  0.2  10 10000
-* -387 SIZE      0  1.e10
-
-MST settings
-* 10408618 NTUBES    4    10000
-* 10408618 LOSS1      -1.  0.10  0  10
-* 10408618 LOSS2      -1.  0.20  10 10000
-* 10408618 SIZE      0  1.e10
-
-* 10608418 NTUBES    4    10000
-* 10608418 LOSS1      -1.  0.10  0  10
-* 10608418 LOSS2      -1.  0.20  10 10000
-* 10608418 SIZE      0  1.e10
+* 201409917 LOSS2      -1.  0.2  10 10000
 
