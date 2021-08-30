@@ -1,0 +1,26 @@
+#####################################################################
+# CTA South
+# Prod3b SCTAlpha
+# hyperarray (14 SCTs)
+#
+# Column 1: prod3b telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+55 20
+56 20
+57 20
+58 20
+59 20
+61 10
+62 10
+66 10
+67 10
+68 10
+69 10
+70 10
+76 10
+77 10
