@@ -1,17 +1,13 @@
 Telescope type dependent weights for stereo reconstruction
-Paranal SCT (grid prod3b production 2016)
-(same values as FlashCam)
+Combined file for prod3b La Palma / Paranal (May 2017)
+Adapt SST weight for prod3bSCT-Alpha Production
+=========================================================
 
 Determined from gain / size distribution matching
 
-LST
-* 138704810 0.2
+MST FlashCam
+* 10408618  1.
 MST SCT
 * 207308707 1.
 SST GCT
-* 201309316 0.5
-SST DC-1m
-* 909924 0.5
-ASTRI
-* 201511619 0.35
-
+* 201309316 1.
