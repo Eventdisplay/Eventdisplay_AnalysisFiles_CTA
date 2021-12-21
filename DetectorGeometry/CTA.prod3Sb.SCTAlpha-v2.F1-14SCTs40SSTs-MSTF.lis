@@ -1,0 +1,67 @@
+#####################################################################
+# CTA South
+# Prod3b SCTAlpha
+# hyperarray (14 MST-F, 40 GCT SSTs)
+# no overlap between MST-F and SCTs
+#
+# Column 1: prod3b telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+116
+117
+118
+119
+120
+122
+123
+127
+128
+129
+130
+131
+137
+138
+42
+43
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+78
+79
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
