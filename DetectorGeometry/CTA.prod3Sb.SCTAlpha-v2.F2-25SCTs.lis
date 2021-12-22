@@ -1,0 +1,38 @@
+#####################################################################
+# CTA South
+# Prod3b SCT
+# 25 SCTs
+#
+# Column 1: prod3b telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+116 20
+117 20
+118 20
+119 20
+120 20
+122 20
+123   20
+127   20
+128   20
+129   20
+130   20
+131   20
+132   20
+133   20
+134   20
+135   20
+136   20
+137   20
+138   20
+151   20
+152   20
+153   20
+154   20
+155   20
+156   20
+157   20
