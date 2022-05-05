@@ -1,0 +1,21 @@
+#####################################################################
+# CTA North Advanced Threshold Layout D7
+# Prod5 North
+# 0 LSTs and 9 MSTs (NectarCam type)
+#
+# Column 1: prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+5     20    12    1   M-01
+6     20    12    1   M-02
+7     20    12    1   M-03
+8     20    12    1   M-04
+9     20    12    1   M-05
+11     20    12    1  M-07
+12     20    12    1  M-08
+35     20    12    1  M-100
+19     20    12    1  M-15
