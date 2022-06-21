@@ -1,0 +1,14 @@
+#####################################################################
+# CTA South 
+# Prod5
+# 2 LSTs 
+#
+# Column 1: prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+2    20.   12   1   L-02
+3    20.   12   1   L-03
