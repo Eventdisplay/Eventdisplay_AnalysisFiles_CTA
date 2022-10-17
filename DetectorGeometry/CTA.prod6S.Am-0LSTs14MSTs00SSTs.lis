@@ -1,0 +1,26 @@
+#####################################################################
+# CTA South Layout - Alpha
+# Prod6
+# 14 MSTs, 00 SSTs
+#
+# Column 1: prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+5    20.   12   1   MSTS-01
+6    20.   12   1   MSTS-02
+7    20.   12   1   MSTS-03
+8    20.   12   1   MSTS-04
+9    20.   12   1   MSTS-05
+10    20.   12   1  MSTS-06
+11    20.   12   1  MSTS-07
+12    20.   12   1  MSTS-08
+13    20.   12   1  MSTS-09
+14    20.   12   1  MSTS-10
+15    20.   12   1  MSTS-11
+16    20.   12   1  MSTS-12
+17    20.   12   1  MSTS-13
+18    20.   12   1  MSTS-14
