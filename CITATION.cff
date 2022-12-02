@@ -1,0 +1,44 @@
+# YAML 1.2
+# Metadata for citation of this software according to the CFF format (https://citation-file-format.github.io/)
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+title: "Eventdisplay Analysis Files for CTA"
+abstract: "Parameter and configuration files for Eventdisplay analysis for CTA"
+doi: "https://doi.org/10.5281/zenodo.4263712"
+version: 1.6.0
+date-released: 2022-04-25
+keywords:
+- "gamma-ray astronomy"
+- "astronomy software"
+- "Imaging Atmospheric Cherenkov Telescope"
+- VERITAS
+- CTA
+- "Cherenkov Telescope Array"
+- Eventdisplay
+repository-code: https://github.com/Eventdisplay/Eventdisplay_AnalysisFiles_CTA
+license: BSD-3-Clause
+authors:
+- given-names: Gernot
+  family-names: Maier
+  affiliation: DESY
+  orcid: https://orcid.org/0000-0001-9868-4700
+- given-names: Orel
+  family-names: Gueta
+  affiliation: DESY
+- given-names: Elisa
+  family-names: Pueschel
+  affiliation: DESY
+references:
+- scope: "Additional material"
+  type: article
+  title: "Eventdisplay: An Analysis and Reconstruction Package for Ground-based Gamma-ray Astronomy"
+  authors:
+  - familiy-names: Maier
+    given-names: Gernot
+    affiliation: DESY
+  - familiy-names: Holder
+    given-names: Jamie
+    affiliation: "Department of Physics and Astronomy and the Bartol Research Institute, University of Delaware, Newark, DE 19716, USA"
+  doi: 10.48550/arXiv.1708.04048
+  url: "https://arxiv.org/abs/1708.04048"
+  year: 2017

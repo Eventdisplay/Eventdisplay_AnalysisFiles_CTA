@@ -1,0 +1,16 @@
+Telescope type dependent weights for stereo reconstruction
+Combined file for prod6 La Palma / Paranal
+=========================================================
+
+Determined from gain / size distribution matching
+
+LST
+* 138704810 0.5
+MST FlashCam
+* 10408618 1.
+MST NectarCam
+* 10608418 0.8
+SST
+* 201109916 0.8
+SCT
+* 205008707 1.

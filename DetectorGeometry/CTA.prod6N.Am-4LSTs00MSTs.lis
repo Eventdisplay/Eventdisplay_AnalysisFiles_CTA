@@ -1,7 +1,7 @@
 #####################################################################
-# CTA South 
-# Prod5
-# 2 LSTs 
+# CTA North Alpha Layout
+# Prod6
+# 4 LSTs and 0 MSTs
 #
 # Column 1: prod5 telescope number
 # Column 2: FOV (deg)
@@ -10,5 +10,7 @@
 # Column 5: CTAO telescope name
 #
 #####################################################################
-1    20.   12   1   L-01
-3    20.   12   1   L-03
+1    20.   12   1   LSTN-01
+2    20.   12   1   LSTN-02
+3    20.   12   1   LSTN-03
+4    20.   12   1   LSTN-04

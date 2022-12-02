@@ -1,0 +1,55 @@
+#####################################################################
+# CTA North Hyperarray Layout
+# Prod6
+# 4 LSTs and 33 MSTs
+#
+# Column 1: prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+1    20.   12   1   LSTN-01
+2    20.   12   1   LSTN-02
+3    20.   12   1   LSTN-03
+4    20.   12   1   LSTN-04
+5    20.   12   1   MSTN-01
+6    20.   12   1   MSTN-01C
+7    20.   12   1   MSTN-02
+8    20.   12   1   MSTN-02A
+9    20.   12   1   MSTN-03
+10    20.   12   1  MSTN-04
+11    20.   12   1  MSTN-05
+12    20.   12   1  MSTN-05B
+13    20.   12   1  MSTN-06
+14    20.   12   1  MSTN-07
+15    20.   12   1  MSTN-07C
+16    20.   12   1  MSTN-08
+17    20.   12   1  MSTN-09
+18    20.   12   1  MSTN-10
+19    20.   12   1  MSTN-11
+20    20.   12   1  MSTN-12
+21    20.   12   1  MSTN-13
+22    20.   12   1  MSTN-14
+23    20.   12   1  MSTN-15
+24    20.   12   1  MSTN-15A
+25    20.   12   1  MSTN-100
+26    20.   12   1  MSTN-101
+27    20.   12   1  MSTN-102
+28    20.   12   1  MSTN-103
+29    20.   12   1  MSTN-104
+30    20.   12   1  MSTN-105
+31    20.   12   1  MSTN-106
+32    20.   12   1  MSTN-107
+33    20.   12   1  MSTN-108
+34    20.   12   1  MSTN-109
+35    20.   12   1  MSTN-110
+36    20.   12   1  MSTN-111
+37    20.   12   1  MSTN-112
+38    20.   12   1  MSTN-04B
+39    20.   12   1  MSTN-04C
+40    20.   12   1  MSTN-04D
+41    20.   12   1  MSTN-113
+42    20.   12   1  MSTN-114
+43    20.   12   1  MSTN-115
