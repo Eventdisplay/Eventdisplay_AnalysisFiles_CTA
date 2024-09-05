@@ -3,7 +3,7 @@
 # Prod6
 # 14 MSTs, 00 SSTs
 #
-# Column 1: prod5 telescope number
+# Column 1: prod6 telescope number
 # Column 2: FOV (deg)
 # Column 3: dynamical range (bit)
 # Column 4: for non-FADC analysis: use raw or calibrated (default) sum
