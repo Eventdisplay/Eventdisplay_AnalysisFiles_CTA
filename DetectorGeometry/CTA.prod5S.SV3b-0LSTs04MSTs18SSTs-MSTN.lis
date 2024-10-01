@@ -1,0 +1,36 @@
+#####################################################################
+# CTA South Layout Science Verification SV3b
+# Prod5 South
+# 0 LSTs, 4 MSTs, 18 SSTs
+#
+# NectarCam MSTs
+#
+# Column 1: Prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for no-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope number
+#
+#####################################################################
+6     20    12    1   M-02
+7     20    12    1   M-03
+16     20    12    1   M-12
+17     20    12    1   M-13
+37     20    12    1   S-08
+39     20    12    1   S-10
+43     20    12    1   S-14
+46     20    12    1   S-17
+47     20    12    1   S-18
+49     20    12    1   S-20
+52     20    12    1   S-23
+53     20    12    1   S-24
+57     20    12    1   S-28
+59     20    12    1   S-30
+63     20    12    1   S-34
+65     20    12    1   S-36
+76     20    12    1   S-47
+77     20    12    1   S-48
+85     20    12    1   S-56
+87     20    12    1   S-58
+91     20    12    1   S-62
+99     20    12    1   S-70
