@@ -1,0 +1,16 @@
+#####################################################################
+# CTA South Layout Science Verification SV2
+# Prod5 South
+# 0 LSTs, 2 MSTs, 0 SSTs
+#
+# FlashCam MSTs
+#
+# Column 1: Prod5 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+6    20.   12   1   M-02
+12    20.   12   1  M-08
