@@ -5,8 +5,8 @@ message: If you use this software, please cite it using these metadata.
 title: "Eventdisplay Analysis Files for CTA"
 abstract: "Parameter and configuration files for Eventdisplay analysis for CTA"
 doi: "https://doi.org/10.5281/zenodo.4263712"
-version: 1.6.0
-date-released: 2022-04-25
+version: 1.8.0
+date-released: 2024-12-18
 keywords:
 - "gamma-ray astronomy"
 - "astronomy software"
@@ -33,10 +33,10 @@ references:
   type: article
   title: "Eventdisplay: An Analysis and Reconstruction Package for Ground-based Gamma-ray Astronomy"
   authors:
-  - familiy-names: Maier
+  - family-names: Maier
     given-names: Gernot
     affiliation: DESY
-  - familiy-names: Holder
+  - family-names: Holder
     given-names: Jamie
     affiliation: "Department of Physics and Astronomy and the Bartol Research Institute, University of Delaware, Newark, DE 19716, USA"
   doi: 10.48550/arXiv.1708.04048

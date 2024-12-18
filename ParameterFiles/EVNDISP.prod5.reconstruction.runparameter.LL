@@ -50,7 +50,6 @@ FlashCam digitial filtering analysis
 * 201409917 FADCDOUBLEPASS 0 6 2 0
 
  trace integration window <window 1> <window 2>
- (TODO: check trace integration window for different readouts)
 * -387      FADCSUMMATIONWINDOW 2 2
 * 10408618  FADCSUMMATIONWINDOW 4 4
 * 10608418  FADCSUMMATIONWINDOW 4 4
@@ -154,23 +153,23 @@ Quality cuts applied before stereo reconstruction
 
 LST settings
 * -387 NTUBES    4    10000
-* -387 LOSS1      -1.  0.1  0  10
-* -387 LOSS2      -1.  0.2  10 10000
-* -387 SIZE      0  1.e10
+* -387 LOSS1      -1.  0.4  0  10
+* -387 LOSS2      -1.  0.4  10 10000
+* -387 SIZE      0  1.e30
  
 MST settings
 * 10408618 NTUBES    4    10000
-* 10408618 LOSS1      -1.  0.10  0  10
-* 10408618 LOSS2      -1.  0.20  10 10000
-* 10408618 SIZE      0  1.e10
+* 10408618 LOSS1      -1.  0.40  0  10
+* 10408618 LOSS2      -1.  0.40  10 10000
+* 10408618 SIZE      0  1.e30
 
 * 10608418 NTUBES    4    10000
-* 10608418 LOSS1      -1.  0.10  0  10
-* 10608418 LOSS2      -1.  0.20  10 10000
-* 10608418 SIZE      0  1.e10
+* 10608418 LOSS1      -1.  0.40  0  10
+* 10608418 LOSS2      -1.  0.40  10 10000
+* 10608418 SIZE      0  1.e30
 
 SST settings
 * 201409917 NTUBES    5    10000
-* 201409917 LOSS1      -1.  0.1  0  10
-* 201409917 LOSS2      -1.  0.2  10 10000
+* 201409917 LOSS1      -1.  0.4  0  10
+* 201409917 LOSS2      -1.  0.4  10 10000
 

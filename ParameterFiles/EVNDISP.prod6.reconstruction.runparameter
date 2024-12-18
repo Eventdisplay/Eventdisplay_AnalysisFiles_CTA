@@ -53,13 +53,11 @@ FlashCam digitial filtering analysis
 * 205008707 FADCDOUBLEPASS 0 6 2 0
 
  trace integration window <window 1> <window 2>
- (TODO: check trace integration window for different readouts)
 * -387      FADCSUMMATIONWINDOW 3 3
 * 10408618  FADCSUMMATIONWINDOW 4 4
 * 10608418  FADCSUMMATIONWINDOW 4 4
 * 201109916 FADCSUMMATIONWINDOW 6 6
 * 205008707 FADCSUMMATIONWINDOW 6 6
-
 
  trace integration start 
  (for window 1 for integration method 1)
@@ -151,7 +149,7 @@ pixel shape definition (important for edge pixel finder)
 
  image calculation at the edge of the camera
   <start fit for image with at least this loss> <min number of tubes>
-* -387      LLEDGEFIT 1.0 5
+* -387      LLEDGEFIT 0.1 5
 * 10408618  LLEDGEFIT 0.1 5
 * 10608418  LLEDGEFIT 0.1 5
 * 201109916 LLEDGEFIT 1.0 5
@@ -169,35 +167,35 @@ Quality cuts applied before stereo reconstruction
 !! note that any changes here must be propagated below into the subarrays !!
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 5.
+* -1 MINANGLE 0.
 
 LST settings
 * -387 NTUBES    4    10000
-* -387 LOSS1      -1.  0.1  0  10
-* -387 LOSS2      -1.  0.2  10 10000
+* -387 LOSS1      -1.  0.4  0  10
+* -387 LOSS2      -1.  0.4  10 10000
 * -387 SIZE      0  1.e30
  
 MST settings
 * 10408618 NTUBES    4    10000
-* 10408618 LOSS1      -1.  0.10  0  10
-* 10408618 LOSS2      -1.  0.20  10 10000
+* 10408618 LOSS1      -1.  0.40  0  10
+* 10408618 LOSS2      -1.  0.40  10 10000
 * 10408618 SIZE      0  1.e30
 
 * 10608418 NTUBES    4    10000
-* 10608418 LOSS1      -1.  0.10  0  10
-* 10608418 LOSS2      -1.  0.20  10 10000
+* 10608418 LOSS1      -1.  0.40  0  10
+* 10608418 LOSS2      -1.  0.40  10 10000
 * 10608418 SIZE      0  1.e30
 
 SST settings
 * 201109916 NTUBES    5    10000
-* 201109916 LOSS1      -1.  0.1  0  10
-* 201109916 LOSS2      -1.  0.1  10 10000
+* 201109916 LOSS1      -1.  0.4  0  10
+* 201109916 LOSS2      -1.  0.4  10 10000
 * 201109916 SIZE      0  1.e30
 
 SCT Settings
 * 205008707 NTUBES    6    10000
-* 205008707 LOSS1      -1.  0.1  0  10
-* 205008707 LOSS2      -1.  0.1  10 10000
+* 205008707 LOSS1      -1.  0.4  0  10
+* 205008707 LOSS2      -1.  0.4  10 10000
 * 205008707 SIZE      0  1.e30
 
 
@@ -206,7 +204,7 @@ LST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 5.
+* -1 MINANGLE 0.
 
 Switch everything off but LSTs
 * 10408618 USEIMAGE 0
@@ -218,8 +216,8 @@ Switch everything off but LSTs
 
 LST settings
 * -387 NTUBES    4    10000
-* -387 LOSS1      -1.  0.1  0  10
-* -387 LOSS2      -1.  0.2  10 10000
+* -387 LOSS1      -1.  0.4  0  10
+* -387 LOSS2      -1.  0.4  10 10000
 * -387 SIZE      0  1.e30
 
 ---------------------------------------------------------------------------------------------
@@ -227,7 +225,7 @@ MST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 5.
+* -1 MINANGLE 0.
 
 Switch everything off but MSTs
 * -387 USEIMAGE 0
@@ -238,13 +236,13 @@ Switch everything off but MSTs
 
 MST settings
 * 10408618 NTUBES    4    10000
-* 10408618 LOSS1      -1.  0.10  0  10
-* 10408618 LOSS2      -1.  0.20  10 10000
+* 10408618 LOSS1      -1.  0.40  0  10
+* 10408618 LOSS2      -1.  0.40  10 10000
 * 10408618 SIZE      0  1.e30
 
 * 10608418 NTUBES    4    10000
-* 10608418 LOSS1      -1.  0.10  0  10
-* 10608418 LOSS2      -1.  0.20  10 10000
+* 10608418 LOSS1      -1.  0.40  0  10
+* 10608418 LOSS2      -1.  0.40  10 10000
 * 10608418 SIZE      0  1.e30
 
 ---------------------------------------------------------------------------------------------
@@ -252,7 +250,7 @@ SST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 5.
+* -1 MINANGLE 0.
 
 Switch everything off but SSTs
 * -387 USEIMAGE 0
@@ -263,15 +261,15 @@ Switch everything off but SSTs
 
 SST Settings
 * 201109916 NTUBES    6    10000
-* 201109916 LOSS1      -1.  0.1  0  10
-* 201109916 LOSS2      -1.  0.1  10 10000
+* 201109916 LOSS1      -1.  0.4  0  10
+* 201109916 LOSS2      -1.  0.4  10 10000
 
 ---------------------------------------------------------------------------------------------
 MST+SST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 5.
+* -1 MINANGLE 0.
 
 Switch LST off
 * -387 USEIMAGE 0
@@ -283,19 +281,19 @@ Switch SCTs off
 
 MST settings
 * 10408618 NTUBES    4    10000
-* 10408618 LOSS1      -1.  0.10  0  10
-* 10408618 LOSS2      -1.  0.20  10 10000
+* 10408618 LOSS1      -1.  0.40  0  10
+* 10408618 LOSS2      -1.  0.40  10 10000
 * 10408618 SIZE      0  1.e30
 
 * 10608418 NTUBES    4    10000
-* 10608418 LOSS1      -1.  0.10  0  10
-* 10608418 LOSS2      -1.  0.20  10 10000
+* 10608418 LOSS1      -1.  0.40  0  10
+* 10608418 LOSS2      -1.  0.40  10 10000
 * 10608418 SIZE      0  1.e30
 
 SST setting
 * 201109916 NTUBES    6    10000
-* 201109916 LOSS1      -1.  0.1  0  10
-* 201109916 LOSS2      -1.  0.1  10 10000
+* 201109916 LOSS1      -1.  0.4  0  10
+* 201109916 LOSS2      -1.  0.4  10 10000
 
 
 
@@ -304,7 +302,7 @@ LST+MST array only
 ---------------------------------------------------------------------------------------------
 
 * -1 RECMETHOD 4
-* -1 MINANGLE 5.
+* -1 MINANGLE 0.
 
 Switch SSTs off
 * 201109916 USEIMAGE 0
@@ -313,18 +311,18 @@ Switch SCTs off
 
 LST settings
 * -387 NTUBES    4    10000
-* -387 LOSS1      -1.  0.1  0  10
-* -387 LOSS2      -1.  0.2  10 10000
+* -387 LOSS1      -1.  0.4  0  10
+* -387 LOSS2      -1.  0.4  10 10000
 * -387 SIZE      0  1.e30
 
 MST settings
 * 10408618 NTUBES    4    10000
-* 10408618 LOSS1      -1.  0.10  0  10
-* 10408618 LOSS2      -1.  0.20  10 10000
+* 10408618 LOSS1      -1.  0.40  0  10
+* 10408618 LOSS2      -1.  0.40  10 10000
 * 10408618 SIZE      0  1.e30
 
 * 10608418 NTUBES    4    10000
-* 10608418 LOSS1      -1.  0.10  0  10
-* 10608418 LOSS2      -1.  0.20  10 10000
+* 10608418 LOSS1      -1.  0.40  0  10
+* 10608418 LOSS2      -1.  0.40  10 10000
 * 10608418 SIZE      0  1.e30
 
