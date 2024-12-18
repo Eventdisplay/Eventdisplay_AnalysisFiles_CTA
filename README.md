@@ -1,6 +1,7 @@
 # Eventdisplay Analysis Files for CTA
 
 [![DOI](https://zenodo.org/badge/220769681.svg)](https://zenodo.org/badge/latestdoi/220769681)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 Configuration and run parameter files for Eventdisplay
 
