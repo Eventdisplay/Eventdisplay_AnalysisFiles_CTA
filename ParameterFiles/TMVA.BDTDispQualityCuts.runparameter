@@ -1,1 +1,1 @@
-size>1.\&\&ntubes>log10(4.)\&\&width>0.\&\&width<2.\&\&length>0.\&\&length<10.\&\&tgrad_x<100.\&\&tgrad_x>-100.\&\&loss<0.20\&\&EHeight<100.\&\&Rcore<2000.
+size>1.\&\&ntubes>log10(4.)\&\&width>0.\&\&width<2.\&\&length>0.\&\&length<10.\&\&tgrad_x<100.\&\&tgrad_x>-100.\&\&loss<0.40\&\&EHeight<100.\&\&Rcore<3000.
