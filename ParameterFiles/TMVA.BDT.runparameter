@@ -8,8 +8,14 @@ CTA.TMVA.sub_train.sh
 -- only lines with a '*' in the first column are read in --
 
 ##############################################
+TMVA run mode: TrainGammaHadronSeparation, TrainReconstructionQuality, TrainAngularReconstructionMethod
+
+* RUN_MODE TMVA_RUN_MODE
+
+##############################################
 optimization method (MC or GA)
 (SplitSeed=0)
+
 
  MVA_METHOD BDT
 DEFAULT (updated from MaxDepth=3, 2015-11-19)
@@ -53,6 +59,15 @@ cut categories:  NotEnforced, FMax, FMin, FSmart
 * VARIABLE F -1 -1 NotEnforced log10(EmissionHeightChi2)
 * VARIABLE F -1 -1 NotEnforced log10(SizeSecondMax)
 * VARIABLE F -10. 2. NotEnforced log10(DispDiff)
+ VARIABLE F -1 -1 NotEnforced d_size
+ VARIABLE F -1 -1 NotEnforced d_width
+ VARIABLE F -1 -1 NotEnforced d_length
+ VARIABLE F -1 -1 NotEnforced d_disp
+ VARIABLE F -1 -1 NotEnforced d_cross
+ VARIABLE F -1 -1 NotEnforced d_loss
+ VARIABLE F -1 -1 NotEnforced d_disp_weigth
+ VARIABLE F -1 -1 NotEnforced d_R
+ VARIABLE F -1 -1 NotEnforced d_erec_es
 
 ##############################################
 spectator variables
@@ -60,8 +75,6 @@ spectator variables
  SPECTATOR eventNumber
  SPECTATOR MCze
  SPECTATOR MCaz
- SPECTATOR MCxoff
- SPECTATOR MCyoff
  SPECTATOR MCxcore
  SPECTATOR MCycore
 * SPECTATOR MCe0
@@ -71,6 +84,8 @@ spectator variables
  SPECTATOR Xcore
  SPECTATOR Ycore
  SPECTATOR ENERGYVARIABLE
+* SPECTATOR disp_mc_error
+* SPECTATOR intersect_mc_error
 
 
 ##############################################
