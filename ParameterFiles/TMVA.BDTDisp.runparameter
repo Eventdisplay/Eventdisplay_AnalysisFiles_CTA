@@ -1,1 +1,1 @@
-NTrees=500:BoostType=Grad:Shrinkage=0.1:UseBaggedBoost:GradBaggingFraction=0.5:nCuts=20:MaxDepth=10:PruneMethod=ExpectedError:RegressionLossFunctionBDTG=Huber:MinNodeSize=0.0002:VarTransform=N
+NTrees=300:BoostType=Grad:Shrinkage=0.1:UseBaggedBoost:GradBaggingFraction=0.5:nCuts=20:MaxDepth=10:PruneMethod=ExpectedError:RegressionLossFunctionBDTG=Huber:MinNodeSize=0.0002:VarTransform=N
