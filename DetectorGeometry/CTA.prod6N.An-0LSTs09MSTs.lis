@@ -1,0 +1,21 @@
+#####################################################################
+# CTA North Alpha (alternative) Layout
+# Prod6
+# 0 LSTs and 09 MSTs
+#
+# Column 1: prod6 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+7    20.   12   1   MSTN-03
+8    20.   12   1   MSTN-04
+9    20.   12   1   MSTN-05
+10    20.   12   1  MSTN-06
+11    20.   12   1  MSTN-07
+13    20.   12   1  MSTN-09
+14    20.   12   1  MSTN-10
+15    20.   12   1  MSTN-11
+19    20.   12   1  MSTN-15
