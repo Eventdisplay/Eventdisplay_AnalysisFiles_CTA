@@ -1,0 +1,16 @@
+#####################################################################
+# CTA South Layout - LST
+# Prod6
+# 4 LSTs
+#
+# Column 1: prod6 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+1    20.   12   1   LSTS-01
+2    20.   12   1   LSTS-02
+3    20.   12   1   LSTS-03
+4    20.   12   1   LSTS-04
