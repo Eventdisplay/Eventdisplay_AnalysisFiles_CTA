@@ -1,0 +1,32 @@
+#####################################################################
+# CTA South Layout
+# Prod6
+# 2 LSTs, 5 MSTs, 13 SSTs
+#
+# Column 1: prod6 telescope number
+# Column 2: FOV (deg)
+# Column 3: dynamical range (bit)
+# Column 4: for non-FADC analysis: use raw or calibrated (default) sum
+# Column 5: CTAO telescope name
+#
+#####################################################################
+2    20.   12   1   LSTS-02
+3    20.   12   1   LSTS-03
+5    20.   12   1   MSTS-01
+6    20.   12   1   MSTS-02
+8    20.   12   1   MSTS-04
+9    20.   12   1   MSTS-05
+12    20.   12   1  MSTS-08
+39    20.   12   1  STS-02
+41    20.   12   1  STS-04
+43    20.   12   1  STS-06
+47    20.   12   1  STS-10
+49    20.   12   1  STS-12
+50    20.   12   1  STS-13
+51    20.   12   1  STS-14
+53    20.   12   1  STS-16
+57    20.   12   1  STS-20
+59    20.   12   1  STS-22
+62    20.   12   1  STS-25
+63    20.   12   1  STS-26
+65    20.   12   1  STS-28
