@@ -5,8 +5,8 @@ message: If you use this software, please cite it using these metadata.
 title: "Eventdisplay Analysis Files for CTA"
 abstract: "Parameter and configuration files for Eventdisplay analysis for CTA"
 doi: "https://doi.org/10.5281/zenodo.4263712"
-version: 1.8.0
-date-released: 2024-12-18
+version: 1.13.0
+date-released: 2026-07-10
 keywords:
 - "gamma-ray astronomy"
 - "astronomy software"
@@ -22,12 +22,6 @@ authors:
   family-names: Maier
   affiliation: DESY
   orcid: https://orcid.org/0000-0001-9868-4700
-- given-names: Orel
-  family-names: Gueta
-  affiliation: DESY
-- given-names: Elisa
-  family-names: Pueschel
-  affiliation: DESY
 references:
 - scope: "Additional material"
   type: article
